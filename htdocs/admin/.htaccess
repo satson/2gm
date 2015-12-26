@@ -1,0 +1,20 @@
+<Files *.inc.php>
+order allow,deny
+deny from all
+</Files>
+
+
+RewriteEngine On
+#RewriteBase /projekte/CMS/admin/
+#RewriteCond %{HTTP_HOST} !^www\.v-cms\.at$
+#RewriteRule ^(.*)$ http://www.v-cms.at/$1 [L,R=301]
+
+#RewriteRule ^(.+)/$ /projekte/CMS/admin/$1 [R=301,L]
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?page_name=$1 [L]
+
+#ErrorDocument 401 /index/
+#ErrorDocument 403 /index/
+#ErrorDocument 404 /index/

@@ -1,0 +1,28 @@
+/*********************************************************************
+ *                                                                   *
+ *                                                                   *
+ *                      Erstellungsjahr: 2014                        *
+ *                                                                   *
+ *                                                                   *
+ *********************************************************************/
+
+
+
+.vFrontDroppableEmpty {
+  /*background-image:none;*/
+  opacity:.4;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter:alpha(opacity=40);
+}
+
+
+
+.vSiteElemBox .vSiteElemBoxBearLeiste {
+  cursor:auto;
+}
+
+
+
+.vFrontBaumElem {
+  cursor:auto;
+}

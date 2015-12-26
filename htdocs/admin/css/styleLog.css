@@ -1,0 +1,77 @@
+/*********************************************************************
+ *                                                                   *
+ *                                                                   *
+ *                      Erstellungsjahr: 2014                        *
+ *                                                                   *
+ *                                                                   *
+ *********************************************************************/
+
+
+
+/********** Hintergrund **********/
+#siteLogBack {
+  position:fixed;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  background-color:#DDD;
+  
+  z-index:-1;
+}
+
+
+
+/********** Login Form **********/
+#loginHolder {
+  width:600px;
+  height:400px;
+  background-color:#242424;
+  margin:100px auto 0px auto;
+  
+  box-shadow:0px 2px 5px #555;
+  -moz-box-shadow:0px 2px 5px #555;
+  -webkit-box-shadow:0px 2px 5px #555;
+}
+#loginHolder .frmHolder {
+  margin:80px 0px 0px 80px;
+}
+#loginHolder label {
+  display:block;
+  color:#FFF;
+  font-size:15px;
+  margin-bottom:3px;
+  width:268px;
+}
+#loginHolder input[type="text"], #loginHolder input[type="password"] {
+  background-color:#444;
+  border:1px solid #444;
+  color:#FFF;
+  padding:8px;
+  font-size:15px;
+  width:250px;
+}
+#loginHolder input[type="submit"] {
+  background-color:#1570A6;
+  border:1px solid #1570A6;
+  color:#FFF;
+  padding:6px 25px;
+  font-size:15px;
+  cursor:pointer;
+}
+#loginHolder .frmAbstandLog {
+  height:15px;
+}
+#loginHolder .logLoader {
+  display:none;
+  margin-left:20px;
+}
+
+#loginHolder #logErrorText {
+  display:none;
+  background-color:#C00;
+  padding:10px;
+  width:248px;
+  color:#FFF;
+  margin-top:30px;
+}

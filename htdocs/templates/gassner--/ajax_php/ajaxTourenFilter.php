@@ -1,0 +1,125 @@
+<?php
+session_start();
+
+// Österreichische Zeitzone definieren
+date_default_timezone_set('Europe/Vienna');
+
+
+
+// Datenbank Connection File einbinden
+// *******************************************************
+require_once('../../../inc/db_connect.inc.php');
+
+
+
+// Allgemeine CMS Funktionen Klasse einbinden
+// *******************************************************
+require_once('../../../inc/functionsAll.inc.php');
+
+
+
+if (isset($_POST['VCMS_POST_LANG']) && $_POST['VCMS_POST_LANG'] == 'en') {
+  require_once('../inc/lang/en.inc.php');
+}
+else {
+  require_once('../inc/lang/de.inc.php');
+}
+
+
+
+require_once($_SERVER['DOCUMENT_ROOT'].'/templates/wildkogel/inc/mmClass.inc.php');
+$mmFunctionsObj = new mmFunctionsLibrary();
+$mmAllSiteTaelerArr = $mmFunctionsObj->getAllSiteIDsArrUnderThisParent(109);
+// 109 Alle
+
+
+$curLangTourenAjaxLink = '';
+
+if (isset($_POST['VCMS_POST_LANG']) && !empty($_POST['VCMS_POST_LANG'])) {
+  $curLangTourenAjaxLink = $_POST['VCMS_POST_LANG'].'/';
+}
+
+
+
+foreach ($mmAllSiteTaelerArr as $key => $value) {
+  
+  $mmAllTourenListArr = $mmFunctionsObj->mmGetSiteListDataArray($value, 19);
+
+  foreach ($mmAllTourenListArr as $key => $value) {
+    // Für Bild Ausgabe
+    // ***********************************************************************
+    $bildMFile = '';
+    $picGalIds = '';
+    if (isset($value['detailElemData']['selemPicGal']) && !empty($value['detailElemData']['selemPicGal'])) {
+      $picGalIds = $mmFunctionsObj->getAllPicOnceIdsFromPicGalery($value['detailElemData']['selemPicGal']);
+    }
+    if (!isset($picGalIds) || empty($picGalIds)) {
+      $picGalIds = $mmFunctionsObj->getAllPicOnceIdsFromElementPicGalery($value['detailElemData']['selemConfig']);
+    }
+    $picGalPicsArr = explode(';', $picGalIds);
+    $count = 0;
+    foreach ($picGalPicsArr as $picId) {
+      $count++;
+      $picOnce = $mmFunctionsObj->getPicOnceDataByIdMM($picId);
+      if ($count == 1) {
+        $curThumb = '';
+        if (file_exists($_SERVER['DOCUMENT_ROOT'].'/user_upload/thumb_800/'.$picOnce['bildFile'])) {
+          $curThumb = 'thumb_800/';
+        }
+        $bildMFile = 'user_upload/'.$curThumb.$picOnce['bildFile'];
+      }
+    }
+
+
+    // Für Text Ausgabe
+    // ***********************************************************************
+    $curSelemInhaltArr = json_decode($value['detailElemData']['selemInhalt'], true);
+
+
+
+    // Für Filter Kategorien Klassen
+    // ***********************************************************************
+    $classBuild = '';
+    $allFilterKats = $mmFunctionsObj->mmGetAllFilterkategoriesListFromOneDetailElementArray($value['detailElemData']['selemID']);
+    if (isset($allFilterKats) && !empty($allFilterKats)) {
+      $allFilterKatsArr = explode(';', $allFilterKats);
+      foreach ($allFilterKatsArr as $valueFilKatI) {
+        $classBuild .= ' mmPauschalenUebersichtElementSpalteId-'.$valueFilKatI;
+      }
+    }
+
+
+
+
+
+    echo '<div class="col-md-3 col-sm-6 mmPauschalenUebersichtElementSpalte'.$classBuild.'">';
+      echo '<div class="mmPauschalenUebersichtElementPauschale">';
+        echo '<div class="mmPauschalenUebersichtElementPauschaleBild"><img src="'.$bildMFile.'" alt="" title="" /></div>';
+        echo '<div class="mmPauschalenUebersichtElementPauschaleTextHolder">';
+          echo '<div class="mmPauschalenUebersichtElementPauschaleTextUe">'.strip_tags($curSelemInhaltArr['elemText2']).'</div>';
+          echo '<div class="mmPauschalenUebersichtElementPauschaleTextZeitraum">'.strip_tags($curSelemInhaltArr['elemText3']).'</div>';
+          echo '<div class="mmPauschalenUebersichtElementPauschaleLinkBtnsHolder">';
+            echo '<a href="'.$curLangTourenAjaxLink.$value['seitTextUrl'].'" class="mmPauschalenUebersichtElementPauschaleTextBtnMehr">'.GASSNER_MEHR_LESEN.'</a>';
+          echo '</div>';
+        echo '</div>';
+      echo '</div>';
+    echo '</div>';
+
+
+
+
+
+
+    /*echo '<div class="mmTourentippsUebersichtMoreBoxShowInhaltBox">';
+      echo '<div class="mmTourentippsUebersichtMoreBoxShowInhaltBoxBild"><img src="'.$bildMFile.'" alt="" title="" /></div>';
+      echo '<div class="mmTourentippsUebersichtMoreBoxShowInhaltBoxText">'.strip_tags($curSelemInhaltArr['elemText2']).'</div>';
+      echo '<a class="mmTourentippsUebersichtMoreBoxShowInhaltBoxMehrLesen" href="'.$curLangTourenAjaxLink.$value['seitTextUrl'].'">'.GASSNER_MEHR_LESEN.'</a>';
+    echo '</div>';*/
+  }
+
+  
+}
+
+echo '<div class="clearer"></div>';
+
+?>

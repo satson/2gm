@@ -1,0 +1,36 @@
+/* General styles */
+
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+.vSiteElemBox {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+}
+
+/* Scroll to top */
+#siteArrowScrollTopSiteBtn {
+    position: fixed;
+    bottom: 0px;
+    right: 100px;
+    cursor: pointer;
+    background: url(../img/to-top.png) no-repeat center center;
+    width: 122px;
+    height: 109px;
+    display: none;
+}

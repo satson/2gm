@@ -1,0 +1,12 @@
+/* SOMMER layout specific styles and overrides */
+
+.bigHeader h1, .bigHeader h2, .standardHeader h1 {
+   color: #fff;
+   text-shadow: 2px 2px 2px #333;
+}
+
+.homeUrlaub h1,
+.homeUrlaub h2 {
+   color: #fff;
+   text-shadow: 2px 2px 2px #333;
+}

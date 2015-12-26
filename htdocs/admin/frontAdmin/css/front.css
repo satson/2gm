@@ -1,0 +1,5262 @@
+/*********************************************************************
+ *                                                                   *
+ *                                                                   *
+ *                      Erstellungsjahr: 2014                        *
+ *                                                                   *
+ *                                                                   *
+ *********************************************************************/
+
+
+
+/********** Front Admin Allgemein **********/
+body {
+  padding-top:50px;
+}
+
+.vcmsUserLogedIn .siteHeader .top {margin-top: 51px;}
+
+.clearer {
+  clear:both;
+}
+img {
+  border:0;
+}
+form {
+  display:inline;
+}
+
+.vFrontWinLoader {
+  text-align:center;
+  margin-top:100px;
+  color:#FFF;
+}
+.vFrontWinLoaderBlack {
+  text-align:center;
+  margin-top:100px;
+  color:#333;
+}
+
+.stateYes {
+  background-color:#006400 !important;
+}
+
+.radio-options {
+width: 31%;
+margin-right: 2%;
+float: left;
+}
+
+.resize-options {
+width: 19%;
+margin-right: 1%;
+float: left;
+}
+
+.send-options {
+    width: 26%;
+    margin-right: 1%;
+    float: left;
+}
+
+.resize-options input {
+    padding: 6px;
+	width: 50px;
+    color: #CCCCCC;
+    border: 1px solid #CCCCCC;
+    margin-top: 4px;
+	}
+
+.radio-options p,
+.resize-options p{
+width: 100%;
+padding: 0;
+margin: 0;
+}
+
+
+.other-options {
+width: 45%;
+float: left;
+}
+
+.other-options li {
+width: 100% !important;
+float: none !important; }
+
+.other-options li label {
+width: 40%;}
+
+.other-options input[type=checkbox],
+.other-options input[type=checkbox]:hover {
+width: 20px;}
+
+.ui-icon-gripsmall-diagonal-se {
+  background-position:0px 0px !important;
+  background-image:url("../img/bigChange.png") !important;
+  right:0px !important;
+  bottom:0px !important;
+}
+
+
+#ui-datepicker-div {
+  z-index:99999 !important;
+}
+#vFrontSiSeOwnFelderFormsHolder .ui-datepicker-trigger {
+  vertical-align:middle;
+  margin-left:-30px;
+  margin-top:-3px;
+}
+.ui-datepicker-header {
+  background:#1570a6 !important;
+  border:0px !important;
+}
+
+
+
+
+#siteOnlineAbDateMMN, #siteOnlineAbTimeMMN, 
+#siteOnlineBisDateMMN, #siteOnlineBisTimeMMN {
+  width:120px;
+}
+#siteOnlineBisTimeMMN, #siteOnlineAbTimeMMN {
+  margin-left:10px;
+}
+
+
+
+/********** Front Admin Modul Price Info Window **********/
+#vFrontCmsSysModulePriceInfoOverlay {
+  position:fixed;
+  top:0px;
+  left:0px;
+  bottom:0px;
+  right:0px;
+  background-color:#000;
+  opacity:.8;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter:alpha(opacity=80);
+  
+  z-index:5650;
+}
+#vFrontCmsSysModulePriceInfoWindow {
+  position:fixed;
+  top:100px;
+  left:115px;
+  width:600px;
+  height:300px;
+  background-color:#FFFFFF;
+  font-family:Verdana;
+  font-size:28px;
+  z-index:6100;
+  line-height:normal;
+  color:#333;
+}
+#vFrontCmsSysModulePriceInfoWindow #vFrontCmsSysModulePriceInfoWindowText {
+  margin:64px 80px 0px 80px;
+  color:#C00
+}
+#vFrontCmsSysModulePriceInfoWindow #vFrontCmsSysModulePriceInfoWindowOkBtn {
+  display:inline-block;
+  padding:6px 20px;
+  background-color:#1570a6;
+  color:#FFF;
+  font-family:Verdana;
+  font-size:13px;
+  line-height:normal;
+  margin:50px 0px 0px 80px;
+  cursor:pointer;
+}
+
+
+
+/********** Front MCE Editor **********/
+.mce-tinymce-inline {
+  position:fixed !important;
+  top:7px !important;
+  left:75px !important;
+}
+.mce-tinymce-inline.mce-panel {
+  /*background:none !important;*/
+  background-color:transparent !important;
+  background-image:none !important;
+  border:none !important;
+  z-index:1004 !important;
+}
+.mce-toolbar-grp.mce-panel {
+  background-color:transparent !important;
+  background-image:none !important;
+  border:none !important;
+}
+.mce-edit-focus {
+  outline:none !important;
+}
+.mce-btn {
+  /*background-color:#FFFFFF !important;
+  background-image:none !important;*/
+  border:none !important;
+}
+#mce-modal-block.mce-in {
+  opacity:0.8 !important;
+}
+
+
+.mce-modal-block-set-zindex {
+  z-index:999 !important;
+}
+.mce-window-set-zindex {
+  z-index:1000 !important;
+}
+
+
+
+/********** Multi Bild auswahl Button **********/
+.vFrontMultiPicAuswahlBtnMM {
+  position:absolute;
+  top:18px;
+  left:16px;
+  background-color: #1570a6;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 0 0 30px;
+  padding: 8px 0;
+  text-align: center;
+  width: 130px;
+}
+
+
+
+/********** Front Admin Overlay **********/
+#vFrontIsLoadingOverlay {
+  display:none;
+  position:fixed;
+  top:0px;
+  left:0px;
+  bottom:0px;
+  right:0px;
+  background-color:#444;
+  opacity:.4;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter:alpha(opacity=40);
+  
+  z-index:2250;
+}
+#vFrontOverlay {
+  display:none;
+  position:fixed;
+  top:0px;
+  left:0px;
+  bottom:0px;
+  right:0px;
+  background-color:#000;
+  opacity:.8;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter:alpha(opacity=80);
+  
+  z-index:1050;
+}
+#vFrontOverlaySecond {
+  display:none;
+  position:fixed;
+  top:0px;
+  left:0px;
+  bottom:0px;
+  right:0px;
+  background-color:#000;
+  opacity:.8;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter:alpha(opacity=80);
+  
+  z-index:1150;
+}
+#vFrontOverlayThird {
+  display:none;
+  position:fixed;
+  top:0px;
+  left:0px;
+  bottom:0px;
+  right:0px;
+  background-color:#000;
+  opacity:.8;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter:alpha(opacity=80);
+  
+  z-index:1350;
+}
+#vFrontOverlayFour {
+  display:none;
+  position:fixed;
+  top:0px;
+  left:0px;
+  bottom:0px;
+  right:0px;
+  background-color:#000;
+  opacity:.8;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter:alpha(opacity=80);
+  
+  z-index:1450;
+}
+#vFrontOverlayFive {
+  display:none;
+  position:fixed;
+  top:0px;
+  left:0px;
+  bottom:0px;
+  right:0px;
+  background-color:#000;
+  opacity:.8;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter:alpha(opacity=80);
+  
+  z-index:1550;
+}
+#vFrontOverlaySix {
+  display:none;
+  position:fixed;
+  top:0px;
+  left:0px;
+  bottom:0px;
+  right:0px;
+  background-color:#000;
+  opacity:.8;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter:alpha(opacity=80);
+  
+  z-index:2000;
+}
+
+
+
+/********** Front Admin Error Window **********/
+#vFrontErrorWindow {
+  display:none;
+  position:fixed;
+  top:60px;
+  left:20px;
+  width:340px;
+  min-height:30px;
+  background-color:#C00;
+  line-height:normal;
+  box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+  
+  z-index:2200;
+}
+#vFrontErrorWindow #vFrontErrorWindowInhalt {
+  font-family:Verdana;
+  font-size:14px;
+  padding:20px;
+  color:#FFF;
+}
+
+
+
+/********** Front Admin Ok Window **********/
+#vFrontOkWindow {
+  display:none;
+  position:fixed;
+  top:60px;
+  left:20px;
+  width:340px;
+  min-height:30px;
+  background-color:green;
+  line-height:normal;
+  box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+  
+  z-index:2200;
+}
+#vFrontOkWindow #vFrontOkWindowInhalt {
+  font-family:Verdana;
+  font-size:14px;
+  padding:20px;
+  color:#FFF;
+}
+
+
+
+/********** Front Admin Header **********/
+#vFrontHeader {
+  position:fixed;
+  top:0px;
+  left:0px;
+  right:0px;
+  height:50px;
+  font-family:Verdana;
+  font-size:13px;
+  line-height:normal;
+  box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+  
+  z-index:1002;
+}
+#vFrontHeader .vFrontHeaderBack {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  background-color:#242424;
+  opacity:.9;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter:alpha(opacity=90);
+  
+  z-index:0;
+}
+#vFrontHeader .vFrontHeaderBtn {
+  position:relative;
+  float:right;
+  width:56px;
+  height:50px;
+  background-repeat:no-repeat;
+  background-position:14px 12px;
+  border-left:1px solid #777;
+  cursor:pointer;
+  box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+  
+  /*opacity:.9;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter:alpha(opacity=90);*/
+}
+/*#vFrontHeader .vFrontHeaderBtn:hover {
+  opacity:1;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter:alpha(opacity=100);
+}*/
+#vFrontHeader .stateOpen {
+  background-color:#555;
+}
+#vFrontHeader #vFrontBtnElements, #vFrontHeader #vFrontBtnElementsDummy {
+  float:left;
+  border-left:none;
+  border-right:1px solid #777;
+  background-image:url('../img/box.png');
+  background-position:11px 8px;
+}
+#vFrontHeader #vFrontBtnElementsDummy {
+  opacity:.4;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter:alpha(opacity=40);
+}
+#vFrontHeader #vFrontBtnLogout {
+  background-image:url('../img/logout.png');
+  background-position:14px 11px;
+}
+#vFrontHeader #vFrontBtnBackend {
+  background-image:url('../img/backend.png');
+  background-position:13px 11px;
+}
+#vFrontHeader #vFrontBtnCmsInfos {
+  background-image:url('../img/infoBtnFront.png');
+  background-position:12px 11px;
+}
+#vFrontHeader #vFrontBtnLanguage {
+  background-image:url('../img/lang.png');
+  background-position:12px 9px;
+}
+#vFrontHeader #vFrontBtnLanguage #vFrontLangInfoAusgabe {
+  position:absolute;
+  right:3px;
+  top:3px;
+  padding:2px 4px;
+  background-color:#1570A6;
+  font-size:11px;
+  color:#FFF;
+}
+#vFrontHeader #vFrontBtnStats {
+  background-image:url('../img/stats.png');
+  background-position:14px 11px;
+}
+#vFrontHeader #vFrontBtnHpSetting {
+  background-image:url('../img/hp_setting.png');
+  background-position:15px 12px;
+}
+#vFrontHeader #vFrontBtnSeiten {
+  background-image:url('../img/seiten.png');
+}
+#vFrontHeader #vFrontBtnImages {
+  background-image:url('../img/images.png');
+  background-position:14px 11px;
+}
+#vFrontHeader #vFrontBtnDateiVerwaltung {
+  background-image:url('../img/dateiVerwaltung.png');
+  background-position:15px 12px;
+}
+#vFrontHeader #vFrontShopProductsButton {
+  background-image:url('../img/shopCart.png');
+  background-position:13px 12px;
+}
+#vFrontHeader #vFrontEmpfehlungsManagerAdminButton {
+  background-image:url('../img/empfehlungFrontBtn.png');
+  background-position:13px 11px;
+}
+#vFrontHeader #vFrontKontaktFormularBuilderAdminButton {
+  background-image:url('../img/kontaktFormBuilderBtn.png');
+  background-position:13px 14px;
+}
+#vFrontHeader #vFrontFilterSystemAdminButton {
+  background-image:url('../img/filterSysFrontBtn.png');
+  background-position:14px 13px;
+}
+
+#vFrontHeader #vFrontOrderManagerAdminButton {
+  background-image:url('../img/OrderManagerBtn.png');
+  background-position:13px 14px;
+}
+
+#vFrontSiteEditButton {
+  position:absolute;
+  left:90px;
+  top:15px;
+  width:20px;
+  height:20px;
+  background-image:url('../img/site_edit.png');
+  background-repeat:no-repeat;
+  background-position:0px 0px;
+  cursor:pointer;
+}
+
+#vFrontShowLangInfoUser {
+  position:relative;
+  margin-top:10px;
+  margin-right:20px;
+  float:right;
+  color:#FFF;
+  line-height:30px;
+  padding:0px 20px;
+  background-color:#c0392b;
+}
+
+.vFrontCmsReloadButtonHead {
+  position:relative;
+  float:right;
+  background-image:url('../img/reload.png');
+  background-repeat:no-repeat;
+  background-position:0px 0px;
+  width:24px;
+  height:24px;
+  margin:13px 20px 0px 0px;
+  
+  cursor:pointer;
+}
+
+
+
+/********** Front Admin Language Holder **********/
+#vFrontLangHolder {
+  display:none;
+  position:fixed;
+  top:50px;
+  right:113px;
+  width:227px;
+  /*min-height:75px;*/
+  padding:10px 0px 15px 0px;
+  background-color:#555;
+  border:1px solid #777;
+  font-family:Verdana;
+  font-size:13px;
+  line-height:normal;
+  
+  z-index:1003;
+}
+#vFrontLangHolder .vFrontLangChangeElem {
+  font-size:14px;
+  margin:5px 10px 0px 10px;
+  padding:7px 15px 6px 50px;
+  color:#FFF;
+  cursor:pointer;
+  background-image:url('../img/checkbox_w.png');
+  background-repeat:no-repeat;
+  background-position:14px 5px;
+}
+#vFrontLangHolder .vFrontLangChangeElemChecked {
+  background-image:url('../img/checkboxC_w.png') !important;
+}
+#vFrontLangHolder .vFrontLangChangeElemChecked:hover {
+  background-image:url('../img/checkboxC.png') !important;
+}
+#vFrontLangHolder .vFrontLangChangeElem:hover {
+  background-image:url('../img/checkbox.png');
+  background-color:#FFF;
+  color:#333;
+}
+
+
+
+/********** Front Admin Window Left **********/
+#vFrontWindowLeft {
+  position:fixed;
+  top:50px;
+  left:-281px;
+  bottom:0px;
+  width:280px;
+  background-color:#444;
+  border-right:1px solid #777;
+  border-top:1px solid #777;
+  font-family:Verdana;
+  font-size:13px;
+  line-height:normal;
+  
+  z-index:1002;
+}
+#vFrontWindowLeft #vFrontWindowLeftInhalt {
+  position:absolute;
+  top:25px;
+  bottom:0px;
+  left:15px;
+  right:0px;
+  overflow-y:auto;
+}
+
+
+
+/********** Front Admin Window Right **********/
+#vFrontWindowRight {
+  position:fixed;
+  top:50px;
+  right:-399px;
+  bottom:0px;
+  width:398px;
+  background-color:#444;
+  border-left:1px solid #777;
+  border-top:1px solid #777;
+  font-family:Verdana;
+  font-size:13px;
+  line-height:normal;
+  
+  z-index:1002;
+}
+#vFrontWindowRight #vFrontNewSiteButton {
+  background-color:#1570A6;
+  color:#FFF;
+  width:100px;
+  padding:8px 0px;
+  margin:20px 0px 0px 20px;
+  text-align:center;
+  cursor:pointer;
+}
+#vFrontWindowRight #vFrontNaviArtSiteChange {
+  position:absolute;
+  top:20px;
+  right:20px;
+}
+#vFrontWindowRight .vFrontWindowRightInhalt {
+  position:absolute;
+  top:70px;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  overflow-y:auto;
+}
+
+
+
+/********** Front Admin Center Window Small **********/
+#vFrontCenterWindowSmall {
+  display:none;
+  position:fixed;
+  top:50px;
+  bottom:50px;
+  left:100px;
+  width:415px;
+  background-color:#FFFFFF;
+  font-family:Verdana;
+  font-size:13px;
+  z-index:1100;
+  line-height:normal;
+  color:#333;
+}
+#vFrontCenterWindowSmall #vFrontCenterWindowSmallHead {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  height:35px;
+  background-color:#1570A6;
+}
+#vFrontCenterWindowSmall #vFrontCenterWindowSmallHead #vFrontCenterWindowSmallClose {
+  position:absolute;
+  top:2px;
+  right:5px;
+  height:30px;
+  width:30px;
+  cursor:pointer;
+  background-image:url('../img/closeX.png');
+  background-repeat:no-repeat;
+  background-position:7px 7px;
+}
+#vFrontCenterWindowSmall #vFrontCenterWindowSmallHead #vFrontCenterWindowSmallHeadInhalt {
+  color:#FFF;
+  position:absolute;
+  top:0px;
+  right:0px;
+  left:15px;
+  line-height:35px;
+}
+#vFrontCenterWindowSmall #vFrontCenterWindowSmallInhalt {
+  position:absolute;
+  top:35px;
+  bottom:0px;
+  right:0px;
+  left:0px;
+  overflow-y:auto;
+}
+
+
+
+/********** Front Admin Center Window Big **********/
+#vFrontCenterWindowBig {
+  color:#333;
+  display:none;
+  position:fixed;
+  top:50px;
+  bottom:50px;
+  left:50px;
+  width:1120px;
+  background-color:#FFFFFF;
+  font-family:Verdana;
+  font-size:13px;
+  line-height:normal;
+  z-index:1100;
+}
+#vFrontCenterWindowBig #vFrontCenterWindowBigHead {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  height:35px;
+  background-color:#1570A6;
+}
+#vFrontCenterWindowBig #vFrontCenterWindowBigHead #vFrontCenterWindowBigFileUploadBtn {
+  display:none;
+  position:absolute;
+  top:3px;
+  right:55px;
+  line-height:28px;
+  cursor:pointer;
+  /*background-color:#333;*/
+  color:#FFF;
+  padding:0px 12px 0px 28px;;
+  font-size:12px;
+  background-image:url('../img/upload.png');
+  background-repeat:no-repeat;
+  background-position:5px 5px;
+}
+#vFrontCenterWindowBig #vFrontCenterWindowBigHead #vFrontCenterWindowBigClose {
+  position:absolute;
+  top:2px;
+  right:5px;
+  height:30px;
+  width:30px;
+  cursor:pointer;
+  background-image:url('../img/closeX.png');
+  background-repeat:no-repeat;
+  background-position:7px 7px;
+}
+#vFrontCenterWindowBig #vFrontCenterWindowBigHead #vFrontCenterWindowBigHeadInhalt {
+  color:#FFF;
+  position:absolute;
+  top:0px;
+  right:0px;
+  left:15px;
+  line-height:35px;
+}
+#vFrontCenterWindowBig #vFrontCenterWindowBigInhalt {
+  position:absolute;
+  top:35px;
+  bottom:0px;
+  right:0px;
+  left:0px;
+  overflow-y:auto;
+}
+
+
+
+/********** Front Admin Center Window Big Image Verwaltung **********/
+#vFrontCenterWindowBigImageVerwaltung {
+  display:none;
+  position:fixed;
+  top:50px;
+  bottom:50px;
+  left:50px;
+  width:1200px;
+  background-color:#FFFFFF;
+  font-family:Verdana;
+  font-size:13px;
+  line-height:normal;
+  z-index:1480;
+  color:#333;
+}
+#vFrontCenterWindowBigImageVerwaltungOnLoadOverlay {
+  display:none;
+  position:absolute;
+  top:0px;
+  left:0px;
+  bottom:0px;
+  right:0px;
+  background-color:#333;
+  opacity:.85;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+  filter:alpha(opacity=85);
+  
+  z-index:10;
+}
+#vFrontCenterWindowBigImageVerwaltungOnLoadStateShow {
+  display:none;
+  position:absolute;
+  top:270px;
+  left:364px;
+  width:300px;
+  height:35px;
+  background-color:#999;
+  z-index:11;
+}
+#vFrontCenterWindowBigImageVerwaltungOnLoadStateShowProzent {
+  width:0%;
+  height:35px;
+  background-color:#1570A6;
+}
+#vFrontCenterWindowBigImageVerwaltung #vFrontCenterWindowBigImageVerwaltungHead {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  height:35px;
+  background-color:#1570A6;
+}
+#vFrontCenterWindowBigImageVerwaltung #vFrontCenterWindowBigImageVerwaltungHead #vFrontCenterWindowBigFileUploadBtn {
+  /*display:none;*/
+  position:absolute;
+  top:3px;
+  right:55px;
+  line-height:28px;
+  cursor:pointer;
+  /*background-color:#333;*/
+  color:#FFF;
+  padding:0px 12px 0px 28px;
+  font-size:12px;
+  background-image:url('../img/upload.png');
+  background-repeat:no-repeat;
+  background-position:5px 5px;
+}
+#vFrontCenterWindowBigImageVerwaltungHead #vFrontCenterWindowBigFilesTransportBtn {
+  display:none;
+  position:absolute;
+  top:3px;
+  left:300px;
+  line-height:28px;
+  cursor:pointer;
+  color:#FFF;
+  padding:0px 12px 0px 12px;
+  font-size:12px;
+  background-color:#006400;
+}
+#vFrontCenterWindowBigImageVerwaltungHead #vFrontCenterWindowBigFilesDelMoreBtn {
+  display:none;
+  position:absolute;
+  top:3px;
+  left:450px;
+  line-height:28px;
+  cursor:pointer;
+  color:#FFF;
+  padding:0px 12px 0px 12px;
+  font-size:12px;
+  background-color:#C0392B;
+}
+#vFrontCenterWindowBigImageVerwaltungHead #vFrontCenterWindowBigNewKatBtn {
+  position:absolute;
+  top:3px;
+  left:240px;
+  height:28px;
+  width:28px;
+  cursor:pointer;
+  color:#FFF;
+  font-size:12px;
+  background-image:url('../img/plus_w.png');
+  background-repeat:no-repeat;
+  background-position:7px 7px;
+}
+#vFrontCenterWindowBigImageVerwaltung #vFrontCenterWindowBigImageVerwaltungHead #vFrontCenterWindowBigImageVerwaltungClose {
+  position:absolute;
+  top:2px;
+  right:5px;
+  height:30px;
+  width:30px;
+  cursor:pointer;
+  background-image:url('../img/closeX.png');
+  background-repeat:no-repeat;
+  background-position:7px 7px;
+}
+#vFrontCenterWindowBigImageVerwaltung #vFrontCenterWindowBigImageVerwaltungHead #vFrontCenterWindowBigImageVerwaltungHeadInhalt {
+  color:#FFF;
+  position:absolute;
+  top:0px;
+  right:0px;
+  left:15px;
+  line-height:35px;
+}
+#vFrontCenterWindowBigImageVerwaltung #vFrontCenterWindowBigImageVerwaltungInhalt {
+  position:absolute;
+  top:35px;
+  bottom:0px;
+  right:0px;
+  left:0px;
+  overflow-y:auto;
+}
+
+
+
+
+
+/********** Front Admin Center Window Big Datei Verwaltung **********/
+#vFrontCenterWindowBigDateiVerwaltung {
+  display:none;
+  position:fixed;
+  top:50px;
+  bottom:50px;
+  left:50px;
+  width:1020px;
+  background-color:#FFFFFF;
+  font-family:Verdana;
+  font-size:13px;
+  line-height:normal;
+  z-index:1480;
+  color:#333;
+}
+#vFrontCenterWindowBigDateiVerwaltungOnLoadOverlay {
+  display:none;
+  position:absolute;
+  top:0px;
+  left:0px;
+  bottom:0px;
+  right:0px;
+  background-color:#333;
+  opacity:.85;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+  filter:alpha(opacity=85);
+  
+  z-index:10;
+}
+#vFrontCenterWindowBigDateiVerwaltungOnLoadStateShow {
+  display:none;
+  position:absolute;
+  top:270px;
+  left:364px;
+  width:300px;
+  height:35px;
+  background-color:#999;
+  z-index:11;
+}
+#vFrontCenterWindowBigDateiVerwaltungOnLoadStateShowProzent {
+  width:0%;
+  height:35px;
+  background-color:#1570A6;
+}
+#vFrontCenterWindowBigDateiVerwaltung #vFrontCenterWindowBigDateiVerwaltungHead {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  height:35px;
+  background-color:#1570A6;
+}
+#vFrontCenterWindowBigDateiVerwaltung #vFrontCenterWindowBigDateiVerwaltungHead #vFrontCenterWindowBigDateiVerwaltFileUploadBtn {
+  /*display:none;*/
+  position:absolute;
+  top:3px;
+  right:55px;
+  line-height:28px;
+  cursor:pointer;
+  /*background-color:#333;*/
+  color:#FFF;
+  padding:0px 12px 0px 28px;
+  font-size:12px;
+  background-image:url('../img/upload.png');
+  background-repeat:no-repeat;
+  background-position:5px 5px;
+}
+#vFrontCenterWindowBigDateiVerwaltungHead #vFrontCenterWindowBigDateiVerwaltFilesTransportBtn {
+  display:none;
+  position:absolute;
+  top:3px;
+  left:300px;
+  line-height:28px;
+  cursor:pointer;
+  color:#FFF;
+  padding:0px 12px 0px 12px;
+  font-size:12px;
+  background-color:#006400;
+}
+#vFrontCenterWindowBigDateiVerwaltungHead #vFrontCenterWindowBigDateiVerwaltFilesDelMoreBtn {
+  display:none;
+  position:absolute;
+  top:3px;
+  left:466px;
+  line-height:28px;
+  cursor:pointer;
+  color:#FFF;
+  padding:0px 12px 0px 12px;
+  font-size:12px;
+  background-color:#C0392B;
+}
+#vFrontCenterWindowBigDateiVerwaltungHead #vFrontCenterWindowBigDateiNewKatBtn {
+  position:absolute;
+  top:3px;
+  left:240px;
+  height:28px;
+  width:28px;
+  cursor:pointer;
+  color:#FFF;
+  font-size:12px;
+  background-image:url('../img/plus_w.png');
+  background-repeat:no-repeat;
+  background-position:7px 7px;
+}
+#vFrontCenterWindowBigDateiVerwaltung #vFrontCenterWindowBigDateiVerwaltungHead #vFrontCenterWindowBigDateiVerwaltungClose {
+  position:absolute;
+  top:2px;
+  right:5px;
+  height:30px;
+  width:30px;
+  cursor:pointer;
+  background-image:url('../img/closeX.png');
+  background-repeat:no-repeat;
+  background-position:7px 7px;
+}
+#vFrontCenterWindowBigDateiVerwaltung #vFrontCenterWindowBigDateiVerwaltungHead #vFrontCenterWindowBigDateiVerwaltungHeadInhalt {
+  color:#FFF;
+  position:absolute;
+  top:0px;
+  right:0px;
+  left:15px;
+  line-height:35px;
+}
+#vFrontCenterWindowBigDateiVerwaltung #vFrontCenterWindowBigDateiVerwaltungInhalt {
+  position:absolute;
+  top:35px;
+  bottom:0px;
+  right:0px;
+  left:0px;
+  overflow-y:auto;
+}
+
+
+/********** Front Media Dateiverwaltung File Upload **********/
+#vFrontDateiVerwaltUploadFrm {
+  font-family:'PT Sans Narrow', sans-serif;
+}
+#vFrontDateiVerwaltUploadDrop {
+  /*background-color:#2E3134;*/
+  padding:14px 0px;
+  margin-bottom:8px;
+  border:3px dashed #999;
+  border-radius:4px;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  /*border-image: url('../img/border-image.png') 25 repeat;*/
+  text-align:center;
+  text-transform:uppercase;
+  font-size:15px;
+  font-weight:bold;
+  color:#7f858a;
+  margin-right:18px;
+  margin-left:12px;
+}
+#vFrontDateiVerwaltUploadDrop a {
+  background-color:#1570A6;
+  padding:10px 20px;
+  color:#fff;
+  font-size:14px;
+  border-radius:2px;
+  cursor:pointer;
+  display:inline-block;
+  margin-top:8px;
+  line-height:1;
+  text-decoration:none;
+}
+#vFrontDateiVerwaltUploadDrop a:hover {
+  background-color:#0986a3;
+}
+#vFrontDateiVerwaltUploadDrop input {
+  display:none;
+}
+#vFrontDateiVerwaltUploadFrm ul {
+  list-style:none;
+  /*border-top:1px solid #2b2e31;
+  border-bottom:1px solid #3d4043;*/
+  padding:0px;
+  margin:0px;
+  margin-right:10px;
+}
+#vFrontDateiVerwaltUploadFrm ul li {
+  background-color:#333639;
+
+  background-image:-webkit-linear-gradient(top, #333639, #303335);
+  background-image:-moz-linear-gradient(top, #333639, #303335);
+  background-image:linear-gradient(top, #333639, #303335);
+
+  border-top:1px solid #3d4043;
+  border-bottom:1px solid #2b2e31;
+  padding:15px;
+  height: 52px;
+
+  position: relative;
+}
+#vFrontDateiVerwaltUploadFrm ul li input {
+  display: none;
+}
+#vFrontDateiVerwaltUploadFrm ul li p {
+  width: 550px;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #EEE;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
+  left: 100px;
+}
+#vFrontDateiVerwaltUploadFrm ul li i {
+  font-weight: normal;
+  font-style:normal;
+  color:#7f7f7f;
+  display:block;
+}
+#vFrontDateiVerwaltUploadFrm ul li canvas {
+  top: 15px;
+  left: 32px;
+  position: absolute;
+}
+#vFrontDateiVerwaltUploadFrm ul li span {
+  width: 15px;
+  height: 12px;
+  background: url('../../img/icons.png') no-repeat;
+  position: absolute;
+  top: 34px;
+  right: 33px;
+  cursor:pointer;
+}
+#vFrontDateiVerwaltUploadFrm ul li.working span {
+  height: 16px;
+  background-position: 0 -12px;
+}
+#vFrontDateiVerwaltUploadFrm ul li.error p {
+  color:red;
+}
+ 
+#vFrontCenterWindowBigDateiVerwaltung #vFrontDateiVerwaltUploaderWindowInhalt {
+  /*display:none;*/
+  position:absolute;
+  top:35px;
+  left:280px;
+  right:0px;
+  /*bottom:0px;*/
+  padding-top:6px;
+  background-color:#FFF;
+  overflow:auto;
+}
+
+
+
+
+
+/********** Front Admin Center Window Image Auswahl **********/
+#vFrontCenterWindowImageAuswahl {
+  display:none;
+  position:fixed;
+  top:50px;
+  bottom:50px;
+  left:50px;
+  width:560px;
+  background-color:#FFFFFF;
+  font-family:Verdana;
+  font-size:13px;
+  line-height:normal;
+  z-index:1400;
+  color:#333;
+}
+#vFrontCenterWindowImageAuswahl #vFrontCenterWindowImageAuswahlHead {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  height:35px;
+  background-color:#1570A6;
+}
+#vFrontCenterWindowImageAuswahl #vFrontCenterWindowImageAuswahlHead #vFrontCenterWindowImageAuswahlClose {
+  position:absolute;
+  top:2px;
+  right:5px;
+  height:30px;
+  width:30px;
+  cursor:pointer;
+  background-image:url('../img/closeX.png');
+  background-repeat:no-repeat;
+  background-position:7px 7px;
+}
+#vFrontCenterWindowImageAuswahl #vFrontCenterWindowImageAuswahlHead #vFrontCenterWindowImageAuswahlHeadInhalt {
+  color:#FFF;
+  position:absolute;
+  top:0px;
+  right:0px;
+  left:15px;
+  line-height:35px;
+}
+#vFrontCenterWindowImageAuswahl #vFrontCenterWindowImageAuswahlInhalt {
+  position:absolute;
+  top:35px;
+  bottom:0px;
+  right:0px;
+  left:0px;
+  overflow-y:auto;
+}
+
+
+
+/********** Front Admin Center Window Small Settings (Bilder Kategorien) **********/
+#vFrontCenterWindowSmallSettingsImgVerwalt {
+  display:none;
+  position:fixed;
+  top:100px;
+  /*bottom:50px;*/
+  left:50px;
+  width:500px;
+  height:350px;
+  background-color:#FFFFFF;
+  font-family:Verdana;
+  font-size:13px;
+  line-height:normal;
+  z-index:1600;
+  color:#333;
+}
+#vFrontCenterWindowSmallSettingsImgVerwalt #vFrontCenterWindowSmallSettingsImgVerwaltHead {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  height:35px;
+  background-color:#1570A6;
+}
+#vFrontCenterWindowSmallSettingsImgVerwalt #vFrontCenterWindowSmallSettingsImgVerwaltHead #vFrontCenterWindowSmallSettingsImgVerwaltClose {
+  position:absolute;
+  top:2px;
+  right:5px;
+  height:30px;
+  width:30px;
+  cursor:pointer;
+  background-image:url('../img/closeX.png');
+  background-repeat:no-repeat;
+  background-position:7px 7px;
+}
+#vFrontCenterWindowSmallSettingsImgVerwalt #vFrontCenterWindowSmallSettingsImgVerwaltHead #vFrontCenterWindowSmallSettingsImgVerwaltHeadInhalt {
+  color:#FFF;
+  position:absolute;
+  top:0px;
+  right:0px;
+  left:15px;
+  line-height:35px;
+}
+#vFrontCenterWindowSmallSettingsImgVerwalt #vFrontCenterWindowSmallSettingsImgVerwaltInhalt {
+  position:absolute;
+  top:35px;
+  bottom:0px;
+  right:0px;
+  left:0px;
+  overflow-y:auto;
+}
+
+
+
+/********** Front Admin Center Window Small Settings **********/
+#vFrontCenterWindowSmallSettings {
+  display:none;
+  position:fixed;
+  top:100px;
+  /*bottom:50px;*/
+  left:50px;
+  width:500px;
+  height:350px;
+  background-color:#FFFFFF;
+  font-family:Verdana;
+  font-size:13px;
+  line-height:normal;
+  z-index:1200;
+  color:#333;
+}
+#vFrontCenterWindowSmallSettings #vFrontCenterWindowSmallSettingsHead {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  height:35px;
+  background-color:#1570A6;
+}
+#vFrontCenterWindowSmallSettings #vFrontCenterWindowSmallSettingsHead #vFrontCenterWindowSmallSettingsClose {
+  position:absolute;
+  top:2px;
+  right:5px;
+  height:30px;
+  width:30px;
+  cursor:pointer;
+  background-image:url('../img/closeX.png');
+  background-repeat:no-repeat;
+  background-position:7px 7px;
+}
+#vFrontCenterWindowSmallSettings #vFrontCenterWindowSmallSettingsHead #vFrontCenterWindowSmallSettingsHeadInhalt {
+  color:#FFF;
+  position:absolute;
+  top:0px;
+  right:0px;
+  left:15px;
+  line-height:35px;
+}
+#vFrontCenterWindowSmallSettings #vFrontCenterWindowSmallSettingsInhalt {
+  position:absolute;
+  top:35px;
+  bottom:0px;
+  right:0px;
+  left:0px;
+  overflow-y:auto;
+}
+
+
+
+/********** Front Admin Center Window Small Settings Zindex High **********/
+#vFrontCenterWindowSmallSettingsZindexO {
+  display:none;
+  position:fixed;
+  top:100px;
+  /*bottom:50px;*/
+  left:50px;
+  width:500px;
+  height:350px;
+  background-color:#FFFFFF;
+  font-family:Verdana;
+  font-size:13px;
+  line-height:normal;
+  z-index:2100;
+  color:#333;
+}
+#vFrontCenterWindowSmallSettingsZindexO #vFrontCenterWindowSmallSettingsZindexOHead {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  height:35px;
+  background-color:#1570A6;
+}
+#vFrontCenterWindowSmallSettingsZindexO #vFrontCenterWindowSmallSettingsZindexOHead #vFrontCenterWindowSmallSettingsZindexOClose {
+  position:absolute;
+  top:2px;
+  right:5px;
+  height:30px;
+  width:30px;
+  cursor:pointer;
+  background-image:url('../img/closeX.png');
+  background-repeat:no-repeat;
+  background-position:7px 7px;
+}
+#vFrontCenterWindowSmallSettingsZindexO #vFrontCenterWindowSmallSettingsZindexOHead #vFrontCenterWindowSmallSettingsZindexOHeadInhalt {
+  color:#FFF;
+  position:absolute;
+  top:0px;
+  right:0px;
+  left:15px;
+  line-height:35px;
+}
+#vFrontCenterWindowSmallSettingsZindexO #vFrontCenterWindowSmallSettingsZindexOInhalt {
+  position:absolute;
+  top:35px;
+  bottom:0px;
+  right:0px;
+  left:0px;
+  overflow-y:auto;
+}
+
+
+
+/********** Front Admin Center Window Small Info **********/
+#vFrontCenterWindowSmallInfoCMS {
+  display:none;
+  position:fixed;
+  top:100px;
+  /*bottom:50px;*/
+  left:50px;
+  width:500px;
+  height:350px;
+  background-color:#FFFFFF;
+  font-family:Verdana;
+  font-size:13px;
+  line-height:normal;
+  z-index:1200;
+  color:#333;
+}
+#vFrontCenterWindowSmallInfoCMS #vFrontCenterWindowSmallInfoCMSHead {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  height:35px;
+  background-color:#1570A6;
+}
+#vFrontCenterWindowSmallInfoCMS #vFrontCenterWindowSmallInfoCMSHead #vFrontCenterWindowSmallInfoCMSClose {
+  position:absolute;
+  top:2px;
+  right:5px;
+  height:30px;
+  width:30px;
+  cursor:pointer;
+  background-image:url('../img/closeX.png');
+  background-repeat:no-repeat;
+  background-position:7px 7px;
+}
+#vFrontCenterWindowSmallInfoCMS #vFrontCenterWindowSmallInfoCMSHead #vFrontCenterWindowSmallInfoCMSHeadInhalt {
+  color:#FFF;
+  position:absolute;
+  top:0px;
+  right:0px;
+  left:15px;
+  line-height:35px;
+}
+#vFrontCenterWindowSmallInfoCMS #vFrontCenterWindowSmallInfoCMSInhalt {
+  position:absolute;
+  top:35px;
+  bottom:0px;
+  right:0px;
+  left:0px;
+  overflow-y:auto;
+}
+
+
+
+/********** Front Admin Center Window Small Settings (Sonstige) **********/
+#vFrontCenterWindowSmallSettingsHpSe {
+  display:none;
+  position:fixed;
+  top:100px;
+  /*bottom:50px;*/
+  left:50px;
+  width:500px;
+  height:350px;
+  background-color:#FFFFFF;
+  font-family:Verdana;
+  font-size:13px;
+  line-height:normal;
+  z-index:1200;
+  color:#333;
+}
+#vFrontCenterWindowSmallSettingsHpSe #vFrontCenterWindowSmallSettingsHeadHpSe {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  height:35px;
+  background-color:#1570A6;
+}
+#vFrontCenterWindowSmallSettingsHpSe #vFrontCenterWindowSmallSettingsHeadHpSe #vFrontCenterWindowSmallSettingsCloseHpSe {
+  position:absolute;
+  top:2px;
+  right:5px;
+  height:30px;
+  width:30px;
+  cursor:pointer;
+  background-image:url('../img/closeX.png');
+  background-repeat:no-repeat;
+  background-position:7px 7px;
+}
+#vFrontCenterWindowSmallSettingsHpSe #vFrontCenterWindowSmallSettingsHeadHpSe #vFrontCenterWindowSmallSettingsHeadInhaltHpSe {
+  color:#FFF;
+  position:absolute;
+  top:0px;
+  right:0px;
+  left:15px;
+  line-height:35px;
+}
+#vFrontCenterWindowSmallSettingsHpSe #vFrontCenterWindowSmallSettingsInhaltHpSe {
+  position:absolute;
+  top:35px;
+  bottom:0px;
+  right:0px;
+  left:0px;
+  overflow-y:auto;
+}
+
+
+
+/********** Front Admin Center Window Shop Produkt Liste **********/
+#vFrontCenterWindowHpProductList {
+  display:none;
+  position:fixed;
+  top:50px;
+  bottom:50px;
+  left:50px;
+  width:600px;
+  background-color:#FFFFFF;
+  font-family:Verdana;
+  font-size:13px;
+  line-height:normal;
+  z-index:1100;
+  color:#333;
+}
+#vFrontCenterWindowHpProductList #vFrontCenterWindowHpProductListHead {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  height:35px;
+  background-color:#1570A6;
+}
+#vFrontCenterWindowHpProductList #vFrontCenterWindowHpProductListHead #vFrontCenterWindowHpProductListClose {
+  position:absolute;
+  top:2px;
+  right:5px;
+  height:30px;
+  width:30px;
+  cursor:pointer;
+  background-image:url('../img/closeX.png');
+  background-repeat:no-repeat;
+  background-position:7px 7px;
+}
+#vFrontCenterWindowHpProductList #vFrontCenterWindowHpProductListHead #vFrontCenterWindowHpProductListHeadInhalt {
+  color:#FFF;
+  position:absolute;
+  top:0px;
+  right:0px;
+  left:15px;
+  line-height:35px;
+}
+#vFrontCenterWindowHpProductList #vFrontCenterWindowHpProductListInhalt {
+  position:absolute;
+  top:35px;
+  bottom:0px;
+  right:0px;
+  left:0px;
+  overflow-y:auto;
+}
+
+
+
+/********** Front Admin Center Window Shop Neues Produkt (Bearbeiten) **********/
+#vFrontCenterWindowHpProductNew {
+  display:none;
+  position:fixed;
+  top:50px;
+  bottom:50px;
+  left:50px;
+  width:600px;
+  background-color:#FFFFFF;
+  font-family:Verdana;
+  font-size:13px;
+  line-height:normal;
+  z-index:1250;
+  color:#333;
+}
+#vFrontCenterWindowHpProductNew #vFrontCenterWindowHpProductNewHead {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  height:35px;
+  background-color:#1570A6;
+}
+#vFrontCenterWindowHpProductNew #vFrontCenterWindowHpProductNewHead #vFrontCenterWindowHpProductNewClose {
+  position:absolute;
+  top:2px;
+  right:5px;
+  height:30px;
+  width:30px;
+  cursor:pointer;
+  background-image:url('../img/closeX.png');
+  background-repeat:no-repeat;
+  background-position:7px 7px;
+}
+#vFrontCenterWindowHpProductNew #vFrontCenterWindowHpProductNewHead #vFrontCenterWindowHpProductNewHeadInhalt {
+  color:#FFF;
+  position:absolute;
+  top:0px;
+  right:0px;
+  left:15px;
+  line-height:35px;
+}
+#vFrontCenterWindowHpProductNew #vFrontCenterWindowHpProductNewInhalt {
+  position:absolute;
+  top:35px;
+  bottom:0px;
+  right:0px;
+  left:0px;
+  overflow-y:auto;
+}
+
+
+
+/********** Front Admin Center Window Shop Produkt Liste Seiteneigenschaften auswahl **********/
+#vFrontCenterWindowHpProductListSeitEig {
+  display:none;
+  position:fixed;
+  top:50px;
+  bottom:50px;
+  left:50px;
+  width:600px;
+  background-color:#FFFFFF;
+  font-family:Verdana;
+  font-size:13px;
+  line-height:normal;
+  z-index:1250;
+  color:#333;
+}
+#vFrontCenterWindowHpProductListSeitEig #vFrontCenterWindowHpProductListSeitEigHead {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  height:35px;
+  background-color:#1570A6;
+}
+#vFrontCenterWindowHpProductListSeitEig #vFrontCenterWindowHpProductListSeitEigHead #vFrontCenterWindowHpProductListSeitEigClose {
+  position:absolute;
+  top:2px;
+  right:5px;
+  height:30px;
+  width:30px;
+  cursor:pointer;
+  background-image:url('../img/closeX.png');
+  background-repeat:no-repeat;
+  background-position:7px 7px;
+}
+#vFrontCenterWindowHpProductListSeitEig #vFrontCenterWindowHpProductListSeitEigHead #vFrontCenterWindowHpProductListSeitEigHeadInhalt {
+  color:#FFF;
+  position:absolute;
+  top:0px;
+  right:0px;
+  left:15px;
+  line-height:35px;
+}
+#vFrontCenterWindowHpProductListSeitEig #vFrontCenterWindowHpProductListSeitEigInhalt {
+  position:absolute;
+  top:35px;
+  bottom:0px;
+  right:0px;
+  left:0px;
+  overflow-y:auto;
+}
+
+
+
+/********** Front Admin Center Window Allgemeines Window (z.B. für auswählen) **********/
+#vFrontCenterWindowAllgemeinCMSWindow {
+  display:none;
+  position:fixed;
+  top:50px;
+  bottom:50px;
+  left:50px;
+  width:600px;
+  background-color:#FFFFFF;
+  font-family:Verdana;
+  font-size:13px;
+  line-height:normal;
+  z-index:1600;
+  color:#333;
+}
+#vFrontCenterWindowAllgemeinCMSWindow #vFrontCenterWindowAllgemeinCMSWindowHead {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  height:35px;
+  background-color:#1570A6;
+}
+#vFrontCenterWindowAllgemeinCMSWindow #vFrontCenterWindowAllgemeinCMSWindowHead #vFrontCenterWindowAllgemeinCMSWindowClose {
+  position:absolute;
+  top:2px;
+  right:5px;
+  height:30px;
+  width:30px;
+  cursor:pointer;
+  background-image:url('../img/closeX.png');
+  background-repeat:no-repeat;
+  background-position:7px 7px;
+}
+#vFrontCenterWindowAllgemeinCMSWindow #vFrontCenterWindowAllgemeinCMSWindowHead #vFrontCenterWindowAllgemeinCMSWindowHeadInhalt {
+  color:#FFF;
+  position:absolute;
+  top:0px;
+  right:0px;
+  left:15px;
+  line-height:35px;
+}
+#vFrontCenterWindowAllgemeinCMSWindow #vFrontCenterWindowAllgemeinCMSWindowInhalt {
+  position:absolute;
+  top:35px;
+  bottom:0px;
+  right:0px;
+  left:0px;
+  overflow-y:auto;
+}
+
+
+
+/********** Front Admin Center Window Element Einstellungen Window **********/
+#vFrontCenterWindowElementSettingsCaCMSWindow {
+  display:none;
+  position:fixed;
+  top:50px;
+  bottom:50px;
+  left:50px;
+  width:600px;
+  background-color:#FFFFFF;
+  font-family:Verdana;
+  font-size:13px;
+  line-height:normal;
+  z-index:1350;
+  color:#333;
+}
+#vFrontCenterWindowElementSettingsCaCMSWindow #vFrontCenterWindowElementSettingsCaCMSWindowHead {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  height:35px;
+  background-color:#1570A6;
+}
+#vFrontCenterWindowElementSettingsCaCMSWindow #vFrontCenterWindowElementSettingsCaCMSWindowHead #vFrontCenterWindowElementSettingsCaCMSWindowClose {
+  position:absolute;
+  top:2px;
+  right:5px;
+  height:30px;
+  width:30px;
+  cursor:pointer;
+  background-image:url('../img/closeX.png');
+  background-repeat:no-repeat;
+  background-position:7px 7px;
+}
+#vFrontCenterWindowElementSettingsCaCMSWindow #vFrontCenterWindowElementSettingsCaCMSWindowHead #vFrontCenterWindowElementSettingsCaCMSWindowHeadInhalt {
+  color:#FFF;
+  position:absolute;
+  top:0px;
+  right:0px;
+  left:15px;
+  line-height:35px;
+}
+#vFrontCenterWindowElementSettingsCaCMSWindow #vFrontCenterWindowElementSettingsCaCMSWindowInhalt {
+  position:absolute;
+  top:35px;
+  bottom:0px;
+  right:0px;
+  left:0px;
+  overflow-y:auto;
+}
+
+
+
+/********** Front Admin Seitenbaum Darstellung **********/
+.ui-state-highlight {
+  height:26px;
+  border:1px dotted green;
+  background:#DDD;
+}
+.vFrontSeitenBaumHolder {
+  font-family:Verdana;
+  font-size:13px;
+  color:#FFF;
+  margin:10px 0px 0px 0px;
+  font-style:normal;
+  font-weight:normal;
+}
+.vFrontSeitenBaumHolder .vFrontSeitenBaumHolder0 {
+  margin-left:20px;
+}
+.vFrontSeitenBaumHolder .vFrontSeitenBaumHolder1 {
+  margin-left:20px;
+}
+.vFrontSeitenBaumHolder .vFrontSeitenBaumHolder2 {
+  margin-left:20px;
+}
+.vFrontSeitenBaumHolder .vFrontSeitenBaumHolder3 {
+  margin-left:20px;
+}
+.vFrontSeitenBaumHolder .vFrontSeitenBaumHolder4 {
+  margin-left:20px;
+}
+.vFrontBaumElem {
+  /*padding:7px 6px 7px 28px;*/
+  border-radius:4px 0px 0px 4px;
+  -moz-border-radius:4px 0px 0px 4px;
+  -webkit-border-radius:4px 0px 0px 4px;
+  position:relative;
+  /*cursor:move;*/
+  color:#FFF;
+  /*height:15px;*/
+  margin-bottom:2px;
+  
+  box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+}
+.vFrontBaumElem .isDragToStartDivMM {
+  padding:7px 6px 7px 28px;
+  height:15px;
+  cursor:move;
+  
+  box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+}
+.vFrontBaumElemIsActiveMM {
+  background-color:#777;
+} 
+.vFrontBaumElem:hover {
+  background-color:#FFF;
+  color:#000;
+}
+
+.vFrontBaumOffline {
+  background-color:#BB0000;
+}
+.vFrontBaumNoNavi {
+  background-color:#B18904;
+}
+
+.vFrontBaumOfflineHtmlElem, .vFrontBaumNoNaviHtmlElem {
+  position:absolute;
+  width:20px;
+  top:4px;
+  right:0px;
+  bottom:0px;
+}
+.vFrontBaumOfflineHtmlElem {
+  color:#C00;
+}
+.vFrontBaumNoNaviHtmlElem {
+  color:#b18904;
+}
+.vFrontBaumNoNaviHtmlElemNotAlone {
+  right:20px;
+}
+.vFrontBaumElem:hover .vFrontBaumOfflineHtmlElem {
+  right:110px;
+}
+.vFrontBaumElem:hover .vFrontBaumNoNaviHtmlElem {
+  right:110px;
+}
+.vFrontBaumElem:hover .vFrontBaumNoNaviHtmlElemNotAlone {
+  right:130px;
+}
+
+.vFrontIsSiteCur {
+  background-image:url('../img/siteS_White.png');
+  background-repeat:no-repeat;
+  background-position:5px 6px;
+}
+.vFrontIsSiteCur:hover {
+  background-image:url('../img/siteS_Black.png');
+}
+.vFrontIsBlogCur {
+  background-image:url('../img/beitragS_White.png');
+  background-repeat:no-repeat;
+  background-position:5px 6px;
+}
+.vFrontIsBlogCur:hover {
+  background-image:url('../img/beitragS_Black.png');
+}
+.vFrontIsNaviCur {
+  background-image:url('../img/naviS_White.png');
+  background-repeat:no-repeat;
+  background-position:5px 7px;
+}
+.vFrontIsNaviCur:hover {
+  background-image:url('../img/naviS_Black.png');
+}
+
+.vFrontIsSiteCur.vFrontIsAliasElemOnSiteNow {
+  background-image:url('../img/siteS_Alias.png') !important;
+}
+.vFrontIsBlogCur.vFrontIsAliasElemOnSiteNow {
+  background-image:url('../img/beitragS_Alias.png') !important;
+}
+
+.vFrontBaumElem .vFrontNaviSeitElemBaum {
+  display:none;
+  position:absolute;
+  right:0px;
+  top:0px;
+  bottom:0px;
+  padding-left:6px;
+  background-color:#999;
+}
+.vFrontBaumElem:hover .vFrontNaviSeitElemBaum {
+  display:block;
+}
+.vFrontSeitBaumSeitShow, .vFrontSeitBaumChange, .vFrontSeitBaumTrash, .vFrontSeitBaumChangeOnLang, .vFrontSeitBaumSiteCopy {
+  float:right;
+  width:22px;
+  height:22px;
+  margin:3px 4px 0px 0px;
+  background-repeat:no-repeat;
+  cursor:pointer;
+}
+.vFrontSeitBaumSeitShow {
+  background-image:url('../img/show.png');
+  background-position:2px 3px; 
+  cursor:pointer;
+}
+.vFrontSeitBaumChange, 
+.vFrontSeitBaumChangeOnLang {
+  background-image:url('../img/change.png');
+  background-position:2px 3px;
+}
+.vFrontSeitBaumTrash {
+  background-image:url('../img/trash.png');
+  background-position:2px 3px;
+}
+.vFrontSeitBaumSiteCopy {
+  background-image:url('../img/elemCopy.png');
+  background-position:2px 3px;
+}
+
+
+/********** Sortable Tree **********/
+li.placeholder {
+  list-style:none;
+  /*margin-left:20px;
+  background-color:#FFF;*/
+  height:20px;
+  background-image:url('../img/treeArrow.png');
+  background-repeat:no-repeat;
+  background-position:6px 2px;
+}
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+}
+
+/*li.placeholder {
+  position: relative;
+}
+li.placeholder:before {
+  position: absolute;
+}*/
+
+
+.soElemsNoHoverV .vFrontIsSiteCur:hover {
+  background-image:url('../img/siteS_White.png') !important;
+}
+.soElemsNoHoverV .vFrontIsBlogCur:hover {
+  background-image:url('../img/beitragS_White.png') !important;
+}
+.soElemsNoHoverV .vFrontIsNaviCur:hover {
+  background-image:url('../img/naviS_White.png') !important;
+}
+.soElemsNoHoverV .vFrontBaumElem:hover .vFrontNaviSeitElemBaum {
+  display:none !important;
+}
+.soElemsNoHoverV .vFrontBaumElem:hover {
+  background-color:transparent !important;
+  color:#FFF !important;
+}
+
+
+
+
+/********** Front Admin Drag Elemente **********/
+.vFrontDragElem {
+  margin:8px 10px 0px 10px;
+  padding:10px 5px 10px 50px;
+  /*background-color:#1570A6;*/
+  background-color:#FFF;
+  cursor:move;
+  /*border:1px solid #999;*/
+  color:#555;
+  width:160px;
+  background-repeat:no-repeat;
+  background-position:13px 9px;
+  box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+  
+  box-shadow:1px 1px 3px #555;
+  -moz-box-shadow:1px 1px 3px #555;
+  -webkit-box-shadow:1px 1px 3px #555;
+  
+  z-index:9999;
+}
+.vFrontDragElem.ui-draggable-dragging, .vFrontKontaktFormBuilderDragElemMM.ui-draggable-dragging {
+  font-family:Verdana;
+  font-size:13px;
+  line-height:normal;
+  font-weight:normal;
+}
+.vFrontDragElemCopy {
+  position:absolute;
+  margin:auto;
+  padding:8px 0px 8px 14px;
+  /*text-align:center;*/
+  width:150px;
+  top:70px;
+  left:0px;
+  z-index:998;
+  background-color:#1570a6;
+  color:#FFF;
+}
+.vFrontDragElemCopy .vFrontDragElemCopyCloseBtnMM {
+  position:absolute;
+  top:4px;
+  right:4px;
+  width:10px;
+  height:10px;
+  background-image:url("../img/closeX.png");
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:9px;
+  cursor:pointer;
+}
+
+
+
+/********** Front Admin Site Forms **********/
+.vFrontFrmHolder {
+  margin:15px 0px 20px 28px;
+}
+.vFrontFrmHolder label {
+  display:inline-block;
+  width:337px;
+  font-size:13px;
+  padding-left:2px;
+  color:#333;
+  margin-bottom:0px;
+  font-weight:normal;
+}
+.vFrontFrmHolder label.vFrontLblCheckbox {
+  width:316px;
+  padding-left:0px;
+  font-size:12px;
+}
+.vFrontFrmHolder input[type="text"], .vFrontFrmHolder input[type="password"], .vFrontFrmHolder textarea {
+  padding:8px;
+  border:1px solid #999;
+  background-color:#FFF;
+  width:325px;
+  font-size:12px;
+  font-family:Verdana;
+  
+  box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+  
+  /*box-shadow:1px 1px 2px #333;
+  -moz-box-shadow:1px 1px 2px #333;
+  -webkit-box-shadow:1px 1px 2px #333;*/
+}
+.vFrontFrmHolder textarea {
+  height:55px;
+}
+.vFrontFrmHolder select {
+  padding:8px;
+  border:1px solid #999;
+  background-color:#FFF;
+  width:339px;
+  
+  /*box-shadow:1px 1px 2px #333;
+  -moz-box-shadow:1px 1px 2px #333;
+  -webkit-box-shadow:1px 1px 2px #333;*/
+}
+.vFrontFrmHolder input[type="submit"] {
+  padding:8px;
+  width:342px;
+  background-color:#006400;
+  border:1px solid transparent;
+  cursor:pointer;
+  color:#FFF;
+  font-size:12px;
+  font-family:Verdana;
+  
+  /*box-shadow:1px 1px 2px #333;
+  -moz-box-shadow:1px 1px 2px #333;
+  -webkit-box-shadow:1px 1px 2px #333;*/
+}
+.vFrontFrmHolder .vFrontLblAbstand {
+  height:3px;
+}
+.vFrontFrmHolder .vFrontFrmAbstand {
+  height:8px;
+}
+.vFrontFrmHolder .vFrontFrmAbstandLine {
+  height:1px;
+  width:343px;
+  background-color:#FFF;
+  margin:15px 0px
+}
+.vFrontFrmHolder .dd {
+  width:341px !important;
+  font-size:12px;
+  border:1px solid #999;
+}
+.vFrontFrmHolder .dd .ddChild {
+  border:1px solid #999;
+  left:-1px;
+}
+.vFrontFrmListHolderNaviOhneSeite {
+  width:343px !important;
+}
+.vFrontFrmListHolderNaviOhneSeite .vFrontFrmListHolderLists .vFrontFrmListsElem .vFrontFrmListsElemText {
+  width:250px !important;
+}
+
+
+
+/********** Homepage Settings Seitenlayouts Felder **********/
+.vFrontFrmHolderHpSeRowForms {
+  float:left;
+  width:340px;
+}
+.vFrontFrmHolderHpSeRowFields {
+  position:relative;
+  float:left;
+  width:330px;
+  min-height:20px;
+  margin-top:20px;
+  border:1px solid #BBB;
+}
+
+.vFrontFrmHolderHpSeRowFields .vFrontFrmHolderHpSeRowFieldsNewBtn {
+  position:absolute;
+  top:-35px;
+  right:0px;
+  background-color:#1570a6;
+  color:#fff;
+  cursor:pointer;
+  padding:6px 20px;
+  text-align:center;
+  font-size:12px;
+}
+
+.vFrontFrmHolderHpSeRowFields .vFrontFrmHolderHpSeRowFieldsListIn {
+  margin:15px;
+  min-height:20px;
+}
+
+.vFrontFrmHolderHpSeRowFieldsListIn .vFrontFrmHolderHpSeRowFieldsListInElem {
+  position:relative;
+  background-color:#DDD;
+  margin-bottom:5px;
+  padding:4px 0px 4px 32px;
+  cursor:move;
+  height:18px;
+  overflow:hidden;
+  border-radius:2px;
+  -moz-border-radius:2px;
+  -webkit-border-radius:2px;
+  background-repeat:no-repeat;
+  background-position:8px center;
+  
+  box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+}
+.vFrontFrmHolderHpSeRowFieldsListIn .vFrontFrmHolderHpSeRowFieldsListInElem1 {
+  background-image:url('../img/fields/sep_field.png');
+}
+.vFrontFrmHolderHpSeRowFieldsListIn .vFrontFrmHolderHpSeRowFieldsListInElem2 {
+  background-image:url('../img/fields/text_field.png');
+}
+.vFrontFrmHolderHpSeRowFieldsListIn .vFrontFrmHolderHpSeRowFieldsListInElem3 {
+  background-image:url('../img/fields/area_field.png');
+}
+.vFrontFrmHolderHpSeRowFieldsListIn .vFrontFrmHolderHpSeRowFieldsListInElem4 {
+  background-image:url('../img/fields/wysiwyg_field.png');
+}
+.vFrontFrmHolderHpSeRowFieldsListIn .vFrontFrmHolderHpSeRowFieldsListInElem5 {
+  background-image:url('../img/fields/checkbox_field.png');
+}
+.vFrontFrmHolderHpSeRowFieldsListIn .vFrontFrmHolderHpSeRowFieldsListInElem6 {
+  background-image:url('../img/fields/dropdown_field.png');
+}
+.vFrontFrmHolderHpSeRowFieldsListIn .vFrontFrmHolderHpSeRowFieldsListInElem7 {
+  background-image:url('../img/fields/image_field.png');
+}
+.vFrontFrmHolderHpSeRowFieldsListIn .vFrontFrmHolderHpSeRowFieldsListInElem8 {
+  background-image:url('../img/fields/imageM_field.png');
+}
+.vFrontFrmHolderHpSeRowFieldsListIn .vFrontFrmHolderHpSeRowFieldsListInElem9 {
+  background-image:url('../img/fields/file_field.png');
+}
+.vFrontFrmHolderHpSeRowFieldsListIn .vFrontFrmHolderHpSeRowFieldsListInElem10 {
+  background-image:url('../img/fields/fileM_field.png');
+}
+.vFrontFrmHolderHpSeRowFieldsListIn .vFrontFrmHolderHpSeRowFieldsListInElem11 {
+  background-image:url('../img/fields/relation.png');
+}
+.vFrontFrmHolderHpSeRowFieldsListIn .vFrontFrmHolderHpSeRowFieldsListInElem12 {
+  background-image:url('../img/fields/calendar_field.png');
+}
+.vFrontFrmHolderHpSeRowFieldsListIn .vFrontFrmHolderHpSeRowFieldsListInElem .vFrontFrmHolderHpSeRowFieldsListInElemBtnHolder {
+  position:absolute;
+  top:0px;
+  right:0px;
+  cursor:auto;
+}
+.vFrontFrmHolderHpSeRowFieldsListIn .vFrontFrmHolderHpSeRowFieldsListInElem .vFrontFrmHolderHpSeRowFieldsListInElemBtnHolder .vFrontFrmHolderHpSeRowFieldsListInElemChangeBtn {
+  float:left;
+  width:26px;
+  height:26px;
+  cursor:pointer;
+  background-image:url("../img/change_b.png");
+  background-repeat:no-repeat;
+  background-position:center center;
+}
+.vFrontFrmHolderHpSeRowFieldsListIn .vFrontFrmHolderHpSeRowFieldsListInElem .vFrontFrmHolderHpSeRowFieldsListInElemBtnHolder .vFrontFrmHolderHpSeRowFieldsListInElemDelBtn {
+  float:left;
+  width:26px;
+  height:26px;
+  cursor:pointer;
+  background-image:url("../img/trash_b.png");
+  background-repeat:no-repeat;
+  background-position:center center;
+}
+
+
+.vFrontHpSeSeitenlayoutFelderArtAuswahl {
+  margin:24px 0px 0px 5px;
+}
+.vFrontHpSeSeitenlayoutFelderArtAuswahl .vFrontHpSeSeitenlayoutFelderArtAuswahlUe {
+  font-size:15px;
+  color:#333;
+  font-weight:bold;
+  margin-bottom:30px;
+  margin-left:14px;
+}
+.vFrontHpSeSeitenlayoutFelderArtAuswahl .vFrontHpSeSeitenlayoutFelderArtAuswahlAbstand {
+  height:16px;
+}
+.vFrontHpSeSeitenlayoutFelderArtAuswahl .vFrontHpSeSeitenlayoutFelderArtAuswahlBtn {
+  float:left;
+  padding:10px 0px;
+  background-color:#CCC;
+  color:#333;
+  margin-left:15px;
+  width:142px;
+  font-size:12px;
+  text-align:center;
+  cursor:pointer;
+  
+  border-radius:4px;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  
+  box-shadow:1px 1px 1px #333;
+  -moz-box-shadow:1px 1px 1px #333;
+  -webkit-box-shadow:1px 1px 1px #333;
+}
+
+
+
+/********** Google Meta Count **********/
+.siteMetaTitleCount, .siteMetaKeywordsCount, .siteMetaDescCount {
+  display:block;
+  float:right;
+  color:#006400;
+}
+.siteMetaCountRedUserShow {
+  color:#C00;
+}
+
+
+
+/********** Front Admin Droppable **********/
+.vFrontDroppableEmpty {
+  min-height:30px;
+  /*background-image:url('../img/bg-lines.gif');*/
+  background-image:url('../img/stripe.png');
+  background-color:#EEE;
+}
+.ui-state-dragger {
+  
+}
+.ui-state-dragger-hover {
+  /*background-color:green;
+  background-image:none !important;*/
+  border-bottom:2px solid #1570A6;
+  border-top:2px solid #1570A6;
+  min-height:50px;
+  background-image:url('../img/plusEl.png');
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-color:#EEE;
+}
+
+
+
+
+
+/********** Front Media Verwaltung **********/
+.vFrontImgKatHolder {
+  position:absolute;
+  top:0px;
+  left:0px;
+  bottom:0px;
+  width:270px;
+  background-color:#DDD;
+  overflow:auto;
+  color:#000;
+  padding: 10px;
+}
+
+.vFrontImgKatHolder .categoryButton {
+font-size: 17px;
+font-weight: 600;
+background: #337ab7;
+padding: 5px 10px 5px 10px;
+margin-bottom: 5px;
+}
+
+.vFrontImgKatHolder .categoryButton a {
+color:#FFFFFF;
+cursor: pointer;
+}
+
+.vFrontUnterKatElemAllHolderToogleBtn {
+  position:absolute;
+  width:14px;
+  height:14px;
+  background-image:url('../img/treeplus.png');
+  background-repeat:no-repeat;
+  background-position:-1px -1px;
+  margin-top:-25px;
+  margin-left:6px;
+  cursor:pointer;
+}
+.vFrontUnterKatElemAllHolderToogleBtn.vFrontuKatIsOpen {
+  background-image:url('../img/treeminus.png');
+}
+
+.vFrontKatElem {
+  position:relative;
+  margin-left:22px;
+  margin-bottom:2px;
+  padding:7px 6px 7px 28px;
+  font-size:13px;
+  cursor:pointer;
+  background-image:none;
+  background-repeat:no-repeat;
+  background-position:5px 7px;
+}
+
+.vFrontKatElem:hover  {
+  background:url('../img/bg_hover.jpg') repeat-x;
+  color:#FFF;}
+
+.vFrontKatElemActive {
+  background:url('../img/bg_active.jpg') repeat-x;
+  color:#FFF !important;
+}
+.vFrontKatElemAll {
+  margin-left:4px;
+}
+.vFrontKatElemDelBtn {
+  display:none;
+  position:absolute;
+  right:5px;
+  top:5px;
+  width:20px;
+  height:20px;
+  background-image:url("../img/trash.png");
+  background-repeat:no-repeat;
+  background-position:2px 2px;
+}
+.vFrontKatElemChangeBtn {
+  display:none;
+  position:absolute;
+  right:30px;
+  top:5px;
+  width:20px;
+  height:20px;
+  background-image:url("../img/change.png");
+  background-repeat:no-repeat;
+  background-position:2px 2px;
+}
+.vFrontKatElem:hover > .vFrontKatElemDelBtn, 
+.vFrontKatElem:hover > .vFrontKatElemChangeBtn {
+  display:block;
+}
+
+.vFrontImgVerwaltHolder {
+  position:absolute;
+      top: 409px;
+  right:0px;
+  bottom:0px;
+  left:285px;
+  overflow:auto;
+  color:#FFF;
+}
+.vFrontImgVerwaltHolder .vFrontImgElement {
+  float:left;
+  width:156px;
+  height:150px;
+  background-color:#555;
+  margin:20px 0px 0px 16px;
+  font-size:12px;
+}
+.vFrontImgVerwaltHolder .vFrontImgElement .vFrontImgElementPic {
+  margin:8px;
+  width:140px;
+  height:85px;
+  overflow:hidden;
+  
+  /*box-shadow:0px 0px 5px #555;
+  -moz-box-shadow:0px 0px 5px #555;
+  -webkit-box-shadow:0px 0px 5px #555;*/
+}
+.vFrontImgVerwaltHolder .vFrontImgElement .vFrontImgElementPic img {
+  width:140px;
+}
+.vFrontImgVerwaltHolder .vFrontImgElement .vFrontImgElementName {
+  margin:8px 8px 5px 8px;
+  overflow:hidden;
+  height:16px;
+}
+
+.vFrontImgVerwaltHolder .vFrontImgElement .vFrontImgElementMenu {
+  margin:0px 4px;
+}
+.vFrontImgVerwaltHolder .vFrontImgElement .vFrontImgElementMenu .vFrontVerwPicElemDel, .vFrontImgVerwaltHolder .vFrontImgElement .vFrontImgElementMenu .vFrontVerwPicElemChange, .vFrontImgVerwaltHolder .vFrontImgElement .vFrontImgElementMenu .vFrontVerwPicElemShow, .vFrontImgVerwaltHolder .vFrontImgElement .vFrontImgElementMenu .vFrontVerwDateiElemUriShow {
+  float:right;
+  width:22px;
+  height:22px;
+  margin:0px 4px 0px 0px;
+  background-repeat:no-repeat;
+  cursor:pointer;
+  
+  background-image:url('../img/trash.png');
+  background-position:2px 3px;
+}
+.vFrontImgVerwaltHolder .vFrontImgElement .vFrontImgElementMenu .vFrontVerwPicElemChange {
+  background-image:url('../img/change.png');
+  background-position:2px 3px;
+}
+.vFrontImgVerwaltHolder .vFrontImgElement .vFrontImgElementMenu .vFrontVerwPicElemShow {
+  background-image:url('../img/show.png');
+  background-position:2px 3px; 
+}
+.vFrontImgVerwaltHolder .vFrontImgElement .vFrontImgElementMenu .vFrontVerwDateiElemUriShow {
+  background-image:url('../img/show.png');
+  background-position:2px 3px; 
+}
+
+/***** Jquery UI Selectable *****/
+.ui-selected {
+  background-color:#1570A6 !important;
+  outline:1px dashed #000;
+}
+.ui-selectable-helper {
+  border:2px dashed #000 !important;
+  z-index:2001 !important;
+}
+
+
+
+/********** Front Media File Upload **********/
+#vFrontUploadFrm {
+  font-family:'PT Sans Narrow', sans-serif;
+}
+#vFrontUploadDrop {
+  /*background-color:#2E3134;*/
+  padding:14px 0px;
+  margin-bottom:8px;
+  border:3px dashed #999;
+  border-radius:4px;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  /*border-image: url('../img/border-image.png') 25 repeat;*/
+  text-align:center;
+  text-transform:uppercase;
+  font-size:15px;
+  font-weight:bold;
+  color:#7f858a;
+  margin-right:18px;
+  margin-left:12px;
+}
+#vFrontUploadDrop a {
+  background-color:#1570A6;
+  padding:10px 20px;
+  color:#fff;
+  font-size:14px;
+  border-radius:2px;
+  cursor:pointer;
+  display:inline-block;
+  margin-top:8px;
+  line-height:1;
+  text-decoration:none;
+}
+#vFrontUploadDrop a:hover {
+  background-color:#0986a3;
+}
+#vFrontUploadDrop input {
+  display:none;
+}
+#vFrontUploadFrm ul {
+  list-style:none;
+  /*border-top:1px solid #2b2e31;
+  border-bottom:1px solid #3d4043;*/
+  padding:0px;
+  margin:0px;
+  margin-right:10px;
+}
+#vFrontUploadFrm ul li {
+  background-color:#333639;
+
+  background-image:-webkit-linear-gradient(top, #333639, #303335);
+  background-image:-moz-linear-gradient(top, #333639, #303335);
+  background-image:linear-gradient(top, #333639, #303335);
+
+  border-top:1px solid #3d4043;
+  border-bottom:1px solid #2b2e31;
+  padding:15px;
+  height: 52px;
+
+  position: relative;
+}
+#vFrontUploadFrm ul li input {
+  display: none;
+}
+#vFrontUploadFrm ul li p {
+  width: 550px;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #EEE;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
+  left: 100px;
+}
+#vFrontUploadFrm ul li i {
+  font-weight: normal;
+  font-style:normal;
+  color:#7f7f7f;
+  display:block;
+}
+#vFrontUploadFrm ul li canvas {
+  top: 15px;
+  left: 32px;
+  position: absolute;
+}
+#vFrontUploadFrm ul li span {
+  width: 15px;
+  height: 12px;
+  background: url('../../img/icons.png') no-repeat;
+  position: absolute;
+  top: 34px;
+  right: 33px;
+  cursor:pointer;
+}
+#vFrontUploadFrm ul li.working span {
+  height: 16px;
+  background-position: 0 -12px;
+}
+#vFrontUploadFrm ul li.error p {
+  color:red;
+}
+
+#vFrontCenterWindowBig #vFrontImageUploaderWindowInhalt, 
+#vFrontCenterWindowBigImageVerwaltung #vFrontImageUploaderWindowInhalt {
+  /*display:none;*/
+  position:absolute;
+  top:35px;
+  left:280px;
+  right:0px;
+  /*bottom:0px;*/
+  padding-top:6px;
+  background-color:#FFF;
+  overflow:auto; 
+}
+
+#vFrontCenterWindowBigImageVerwaltung #vFrontImageUploaderWindowInhalt .tabButton.sort,
+#vFrontCenterWindowBigImageVerwaltung #vFrontImageUploaderWindowInhalt .tabButton.send,
+#vFrontCenterWindowBigImageVerwaltung #vFrontImageUploaderWindowInhalt .tabButton.edit {
+    font-size: 13px;
+    color: #FFFFFF;
+    padding: 4px 10px 4px 10px;
+    background: #337ab7 url('../img/arrow-tab.png') no-repeat -15px 50%;
+    padding-left: 14px;
+    margin-bottom: 1px;
+	cursor: pointer;
+}
+
+#vFrontImageUploaderWindowInhalt .uploadTypeButtons {
+background-color: #CCCCCC;
+padding: 5px 20px 5px 20px;
+margin-right: 30px;
+margin-bottom: 5px;
+color:#FFFFFF;
+width: 120px;
+text-align: center;
+cursor: pointer;}
+
+#vFrontImageUploaderWindowInhalt .uploadTypeButtons.active,
+#vFrontImageUploaderWindowInhalt .uploadTypeButtons:hover {
+background-color: #337ab7;
+}
+
+
+/************** ORDER POPUP CSS ***********/
+
+ul.order-system-popup-list,
+ul.order-system-popup-list ul,
+ul.order-filters-top  {
+list-style: none;
+padding: 0;
+margin:0;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;} 
+
+.order-filters-top  li {
+float: left;
+margin: 25px 25px 0 25px;}
+
+.order-system-popup-list .tab-orders {
+    font-size: 13px;
+    color: #FFFFFF;
+    padding: 4px 10px 4px 10px;
+    background: #337ab7 url('../img/arrow-tab.png') no-repeat -15px 50%;
+    padding-left: 14px;
+    margin-bottom: 1px;
+	cursor: pointer;}
+
+.order-system-popup-list .order-info,
+.order-system-popup-list .order-list-form,
+.order-system-popup-list .order-elements li {
+width: 100%;
+padding: 10px;
+background-color: #CCCCCC;
+margin-bottom: 1px;}
+
+.order-system-popup-list .order-info p {
+float: left;
+width: 85%;}
+
+.order-system-popup-list .order-info p.title {
+width: 15%;}
+
+
+.order-system-popup-list .order-element-img .vFrontImgVerwaltHolder {
+position: relative;
+top: 0;
+left: 0;}
+
+.order-system-popup-list .order-element-img {
+float: left;
+width: 15%;}
+
+.order-system-popup-list .order-element-koment {
+float: left;
+width: 75%;}
+
+.order-system-popup-list .order-element-delete {
+float: left;
+width: 10%;
+}
+
+.order-system-popup-list .order-element-img .vFrontImgVerwaltHolder .vFrontImgElement {
+    float: left;
+    width: 118px;
+    height: 102px;
+    background-color: #555;
+    margin: 0;
+    font-size: 12px;
+}
+
+.order-system-popup-list .order-element-img .vFrontImgVerwaltHolder .vFrontImgElement .vFrontImgElementPic {
+    margin: 8px;
+    width: 100px;
+    height: 56px;
+    overflow: hidden;
+}
+
+.order-system-popup-list .order-element-img .vFrontImgVerwaltHolder .vFrontImgElement .vFrontImgElementPic img {
+    width: 100px;
+}
+
+
+.order-system-popup-list .order-list-form input[type=submit] {
+    background-color: #1570A6;
+    padding: 10px 20px;
+	font-family: inherit;
+    color: #fff;
+    border: 0;
+    font-size: 14px;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+} 
+
+.order-system-popup-list .order-list-form textarea {
+width: 100%;
+margin-bottom: 10px;}
+
+.order-system-popup-list .order-list-form input[type="text"] {
+width: 100px;
+margin-bottom: 10px;}
+
+
+.order-system-popup-list .tab-order-color1 {
+background-color: #337ab7;
+}
+
+
+.order-system-popup-list .tab-order-color2 {
+background-color: #E6A003;
+}
+
+.order-system-popup-list .tab-order-color3 {
+background-color: #059A2C;
+}
+
+.order-system-popup-list .tab-order-color4 {
+background-color: #C30202;
+}
+
+.order-system-popup-list .order-element-delete div {
+    padding: 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-image: url('../img/trash.png');
+    background-position: 2px 3px;
+	top: 41px;
+    position: relative;
+    left: 51px;
+}
+
+
+
+/********** Front Elemente **********/
+.vSiteElemBox {
+  min-height:10px;
+}
+.vSiteElemBox.bearStateOn {
+  outline:2px solid #006400 !important;
+}
+.vSiteElemBox .vSiteElemBoxBearLeiste {
+  font-family:Verdana;
+  font-size:13px;
+  display:none;
+  position:absolute;
+  top:-26px;
+  left:-1px;
+  right:0px;
+  height:26px;
+  background-color:#1570A6;
+  color:#FFF;
+  cursor:move;
+  z-index:999;
+}
+.vFrontElemIsOfflineClassMM {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+.vCmsNoElemSortableImportant .vSiteElemBoxBearLeiste {
+  cursor:auto !important;
+}
+.vSiteElemBox:hover {
+  outline:2px solid #1570A6;
+}
+.vSiteElemBox:hover > .vSiteElemBoxBearLeiste {
+  display:block;
+}
+.vSiteElemBox.bearStateOn > .vSiteElemBoxBearLeiste {
+  display:block;
+  background-color:#006400 !important;
+}
+.vSiteElemBox .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteUe {
+  position:absolute;
+  top:3px;
+  left:8px;
+  line-height:normal;
+  
+  z-index:1;
+}
+.vSiteElemBox .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteBildLink, 
+.vSiteElemBox .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteEigenElemLink {
+  position:relative;
+  /*position:absolute;
+  top:2px;
+  right:64px;*/
+  float:right;
+  margin-top:2px;
+  margin-right:6px;
+  
+  width:22px;
+  height:22px;
+  background-image:url('../img/linkS.png');
+  background-repeat:no-repeat;
+  background-position:4px 2px;
+  background-size:15px;
+  cursor:pointer;
+  
+  z-index:2;
+}
+.vSiteElemBox .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteEigenElemLink {
+  /*right:36px;*/
+}
+.vLinkStateAktiv {
+  background-image:url('../img/linkSActive.png') !important;
+}
+.vSiteElemBox .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteChange, 
+.vSiteElemBox .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteBildChange {
+  position:relative;
+  /*position:absolute;
+  top:2px;
+  right:36px;*/
+  float:right;
+  margin-top:2px;
+  margin-right:6px;
+  
+  width:22px;
+  height:22px;
+  background-image:url('../img/change.png');
+  background-repeat:no-repeat;
+  background-position:3px 2px;
+  cursor:pointer;
+  
+  z-index:2;
+}
+.vSiteElemBox .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteElemCopy {
+  position:relative;
+  /*position:absolute;
+  top:2px;
+  right:36px;*/
+  float:right;
+  margin-top:2px;
+  margin-right:6px;
+  
+  width:22px;
+  height:22px;
+  background-image:url('../img/elemCopy.png');
+  background-repeat:no-repeat;
+  background-position:3px 2px;
+  cursor:pointer;
+  
+  z-index:2;
+}
+.vSiteElemBox .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteElemPicGal {
+  position:relative;
+  /*position:absolute;
+  top:2px;
+  right:36px;*/
+  float:right;
+  margin-top:2px;
+  margin-right:6px;
+  
+  width:22px;
+  height:22px;
+  background-image:url('../img/picGalS.png');
+  background-repeat:no-repeat;
+  background-position:3px 3px;
+  cursor:pointer;
+  
+  z-index:2;
+}
+.vSiteElemBox .vSiteElemBoxBearLeiste .vElemAliasElemLinkButtonArrow {
+  display:block;
+  position:relative;
+  float:right;
+  width:22px;
+  height:22px;
+  margin-top:2px;
+  margin-right:6px;
+  background-image:url('../img/inherit.png');
+  background-repeat:no-repeat;
+  background-position:4px 3px;
+  cursor:pointer;
+  
+  z-index:2;
+}
+.vSiteElemBox .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteElemAliasMoreInfo {
+  display:block;
+  position:relative;
+  float:right;
+  width:22px;
+  height:22px;
+  margin-top:2px;
+  margin-right:6px;
+  background-image:url('../img/aliasMoreInfo.png');
+  background-repeat:no-repeat;
+  background-position:4px 2px;
+  cursor:pointer;
+  
+  z-index:2;
+}
+.vSiteElemBox .vSiteElemBoxBearLeiste .vElemInheritButtonArrow {
+  display:block;
+  position:absolute;
+  top:2px;
+  right:8px;
+  width:22px;
+  height:22px;
+  background-image:url('../img/inherit.png');
+  background-repeat:no-repeat;
+  background-position:4px 3px;
+  cursor:pointer;
+  
+  z-index:2;
+}
+.vSiteElemBox .vSiteElemBoxBearLeiste .vElemInheritButtonInfo {
+  position:absolute;
+  top:5px;
+  right:42px;
+  height:22px;
+  font-family:Verdana;
+  font-size:10px;
+  color:#ccc;
+  
+  z-index:2;
+}
+.vSiteElemBox .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteDel, 
+.vSiteElemBox .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteInSpalteDel {
+  position:relative;
+  /*position:absolute;
+  top:2px;
+  right:8px;*/
+  float:right;
+  margin-top:2px;
+  margin-right:8px;
+  
+  width:22px;
+  height:22px;
+  background-image:url('../img/trash.png');
+  background-repeat:no-repeat;
+  background-position:3px 2px;
+  cursor:pointer;
+  
+  z-index:2;
+}
+.vSiteElemBox .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteSave, 
+.vSiteElemBox .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteBildSave {
+  display:none;
+  position:absolute;
+  top:2px;
+  right:36px;
+  width:22px;
+  height:22px;
+  background-image:url('../img/save.png');
+  background-repeat:no-repeat;
+  background-position:3px 2px;
+  cursor:pointer;
+  
+  z-index:2;
+}
+.vSiteElemBox .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteCancel, 
+.vSiteElemBox .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteBildCancel {
+  display:none;
+  position:absolute;
+  top:2px;
+  right:8px;
+  width:22px;
+  height:22px;
+  background-image:url('../img/closeX.png');
+  background-repeat:no-repeat;
+  background-position:3px 2px;
+  cursor:pointer;
+  
+  z-index:2;
+}
+.vSiteElemBox .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteSetting, 
+.vSiteElemBox .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteOwnSettingElem {
+  position:relative;
+  /*position:absolute;
+  top:2px;
+  right:36px;*/
+  float:right;
+  margin-top:2px;
+  margin-right:6px;
+  
+  width:22px;
+  height:22px;
+  background-image:url('../img/elemSetting.png');
+  background-repeat:no-repeat;
+  background-position:3px 2px;
+  cursor:pointer;
+  
+  z-index:2;
+}
+.vSiteElemBox.bearStateOn .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteDel, 
+.vSiteElemBox.bearStateOn .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteInSpalteDel, 
+.vSiteElemBox.bearStateOn .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteChange,  
+.vSiteElemBox.bearStateOn .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteBildChange, 
+.vSiteElemBox.bearStateOn .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteBildLink, 
+.vSiteElemBox.bearStateOn .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteElemCopy, 
+.vSiteElemBox.bearStateOn .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteElemAliasMoreInfo, 
+.vSiteElemBox.bearStateOn .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteOwnSettingElem {
+  display:none;
+}
+.vSiteElemBox.bearStateOn .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteSave, 
+.vSiteElemBox.bearStateOn .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteCancel, 
+.vSiteElemBox.bearStateOn .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteBildSave, 
+.vSiteElemBox.bearStateOn .vSiteElemBoxBearLeiste .vSiteElemBoxBearLeisteBildCancel {
+  display:block;
+}
+
+
+
+.vFrontSiteBildElementButtonNew, .vFrontSiteAliasElementButtonNew, .vFrontSiteAliasElementButtonNewBild1, .vFrontSiteKontaktFormElementButtonNewMM {
+  display:none;
+  position:absolute;
+  top:10px;
+  left:10px;
+  padding:6px 12px;
+  background-color:#336E7B;
+  color:#FFF;
+  font-size:11px;
+  font-family:Verdana;
+  
+  box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+  
+  cursor:pointer;
+  z-index:10;
+}
+.vFrontSiteAliasElementButtonNew {
+  width:116px;
+  text-align:center;
+  line-height:normal;
+}
+.vFrontSiteKontaktFormElementButtonNewMM {
+  width:200px;
+  text-align:center;
+  line-height:normal;
+  font-size:14px;
+}
+.vFrontSiteAliasElementButtonNewBild1 {
+  top:48px;
+  width:116px;
+  text-align:center;
+  line-height:normal;
+}
+.vSiteElemBox:hover > div > div > .vFrontSiteAliasElementButtonNew, .vSiteElemBox:hover > div > div > .vFrontSiteAliasElementButtonNewBild1 {
+  display:block;
+}
+.vSiteElemBox:hover > div > div > .vFrontSiteKontaktFormElementButtonNewMM {
+  display:block;
+}
+
+.vFrontCurAliasElementInfoA {
+  margin-top:105px;
+  margin-left:12px;
+}
+
+
+.vFrontSiteAliasElementBildHolderMM {
+  position:absolute;
+  width:100px;
+  height:65px;
+  top:10px;
+  left:165px;
+  overflow:hidden;
+}
+.vFrontSiteAliasElementBildHolderMM img {
+  width:100%
+}
+.vFrontSiteAliasElementBildDelMM {
+  position:absolute;
+  padding:5px;
+  font-size:11px;
+  line-height:11px;
+  right:0px;
+  bottom:0px;
+  background-color:#1570a6;
+  color:#FFF;
+  font-family:Verdana;
+  cursor:pointer;
+}
+
+
+
+/********** Homepage Einstellungen **********/
+.vFrontHpSettingMenuHolder {
+  position:absolute;
+  top:0px;
+  left:0px;
+  bottom:0px;
+  width:270px;
+  background-color:#DDD;
+  overflow:auto;
+  color:#000;
+}
+.vFrontHpSettingMenuPoint {
+  margin-left:10px;
+  margin-bottom:2px;
+  padding:7px 6px 7px 32px;
+  font-size:13px;
+  cursor:pointer;
+  /*background-image:url('../img/katS_Black.png');*/
+  background-repeat:no-repeat;
+  background-position:7px 7px;
+  
+  border-radius:4px 0px 0px 4px;
+  -moz-border-radius:4px 0px 0px 4px;
+  -webkit-border-radius:4px 0px 0px 4px;
+}
+.vFrontHpSettingMenuPoint:hover, .vFrontActiveHpS {
+  background-color:#333;
+  color:#FFF;
+}
+
+#vFrontHpSeAllgemein {
+  background-image:url('../img/hpSettingsMenu/allgemein_b.png');
+}
+#vFrontHpSeAllgemein:hover, .vFrontActiveHpS#vFrontHpSeAllgemein {
+  background-image:url('../img/hpSettingsMenu/allgemein_w.png');
+}
+
+#vFrontHpSeUser {
+  background-image:url('../img/hpSettingsMenu/user_b.png');
+}
+#vFrontHpSeUser:hover, .vFrontActiveHpS#vFrontHpSeUser {
+  background-image:url('../img/hpSettingsMenu/user_w.png');
+}
+
+#vFrontHpSeElemente {
+  background-image:url('../img/hpSettingsMenu/elemente_b.png');
+}
+#vFrontHpSeElemente:hover, .vFrontActiveHpS#vFrontHpSeElemente {
+  background-image:url('../img/hpSettingsMenu/elemente_w.png');
+}
+
+#vFrontHpSeLayouts {
+  background-image:url('../img/hpSettingsMenu/layout_b.png');
+}
+#vFrontHpSeLayouts:hover, .vFrontActiveHpS#vFrontHpSeLayouts {
+  background-image:url('../img/hpSettingsMenu/layout_w.png');
+}
+
+#vFrontHpSeNaviArt {
+  background-image:url('../img/hpSettingsMenu/naviart_b.png');
+}
+#vFrontHpSeNaviArt:hover, .vFrontActiveHpS#vFrontHpSeNaviArt {
+  background-image:url('../img/hpSettingsMenu/naviart_w.png');
+}
+
+#vFrontHpSeSprachen {
+  background-image:url('../img/hpSettingsMenu/lang_b.png');
+}
+#vFrontHpSeSprachen:hover, .vFrontActiveHpS#vFrontHpSeSprachen {
+  background-image:url('../img/hpSettingsMenu/lang_w.png');
+}
+
+#vFrontHpSeModule {
+  background-image:url('../img/hpSettingsMenu/modul_b.png');
+}
+#vFrontHpSeModule:hover, .vFrontActiveHpS#vFrontHpSeModule {
+  background-image:url('../img/hpSettingsMenu/modul_w.png');
+}
+
+#vFrontHpOrderModule {
+  background-image:url('../img/hpSettingsMenu/orders_b.png');
+}
+#vFrontHpOrderModule:hover, .vFrontActiveHpS#vFrontHpOrderModule {
+  background-image:url('../img/hpSettingsMenu/orders_w.png');
+}
+
+#vFrontHpBasketModule {
+  background-image:url('../img/hpSettingsMenu/basket_b.png');
+}
+#vFrontHpBasketModule:hover, .vFrontActiveHpS#vFrontHpBasketModule {
+  background-image:url('../img/hpSettingsMenu/basket_w.png');
+}
+
+#vFrontHpFilterModule {
+  background-image:url('../img/hpSettingsMenu/filters_b.png');
+}
+#vFrontHpFilterModule:hover, .vFrontActiveHpS#vFrontHpFilterModule {
+  background-image:url('../img/hpSettingsMenu/filters_w.png');
+}
+
+#vFrontHpTimeModule {
+  background-image:url('../img/hpSettingsMenu/time_b.png');
+}
+#vFrontHpTimeModule:hover, .vFrontActiveHpS#vFrontHpTimeModule {
+  background-image:url('../img/hpSettingsMenu/time_w.png');
+}
+
+#vFrontHpSeSitemap {
+  background-image:url('../img/hpSettingsMenu/sitemap_b.png');
+}
+#vFrontHpSeSitemap:hover, .vFrontActiveHpS#vFrontHpSeSitemap {
+  background-image:url('../img/hpSettingsMenu/sitemap_w.png');
+}
+
+.vFrontHpSettingInhaltHolder {
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:285px;
+  overflow:auto;
+}
+.vFrontHpSettingInhaltHolder .vFrontFrmHolder {
+  margin:35px 0 20px 48px
+}
+
+
+
+/********** Seiten Eigenschaften **********/
+.vFrontSiteSettingMenuHolder {
+  position:absolute;
+  top:0px;
+  left:0px;
+  bottom:0px;
+  width:270px;
+  background-color:#DDD;
+  overflow:auto;
+  color:#000;
+}
+.vFrontSiteSettingMenuPoint, .vFrontEmpfehlungsManagerAdminMenuPoint {
+  margin-left:10px;
+  margin-bottom:2px;
+  padding:7px 6px 7px 32px;
+  font-size:13px;
+  cursor:pointer;
+  /*background-image:url('../img/katS_Black.png');*/
+  background-repeat:no-repeat;
+  background-position:7px 7px;
+  
+  border-radius:4px 0px 0px 4px;
+  -moz-border-radius:4px 0px 0px 4px;
+  -webkit-border-radius:4px 0px 0px 4px;
+}
+.vFrontSiteSettingMenuPoint:hover, .vFrontEmpfehlungsManagerAdminMenuPoint:hover, .vFrontActiveSiteS, .vFrontActiveEmpfManagerPoint {
+  background-color:#333;
+  color:#FFF;
+}
+
+#vFrontSiteSeBilder {
+  background-image:url('../img/siteSettingMenu/images_b.png');
+}
+#vFrontSiteSeBilder:hover, .vFrontActiveSiteS#vFrontSiteSeBilder {
+  background-image:url('../img/siteSettingMenu/images_w.png');
+}
+
+#vFrontSiteSeFelder {
+  background-image:url('../img/siteSettingMenu/fieldsS_b.png');
+}
+#vFrontSiteSeFelder:hover, .vFrontActiveSiteS#vFrontSiteSeFelder {
+  background-image:url('../img/siteSettingMenu/fieldsS_w.png');
+}
+
+#vFrontSiteSeProdukte {
+  background-image:url('../img/siteSettingMenu/shop_b.png');
+}
+#vFrontSiteSeProdukte:hover, .vFrontActiveSiteS#vFrontSiteSeProdukte {
+  background-image:url('../img/siteSettingMenu/shop_w.png');
+}
+
+#vFrontSiteSeBilderGalerien {
+  margin-top:30px;
+  background-image:url('../img/siteSettingMenu/picGal_b.png');
+}
+#vFrontSiteSeBilderGalerien:hover, .vFrontActiveSiteS#vFrontSiteSeBilderGalerien {
+  background-image:url('../img/siteSettingMenu/picGal_w.png');
+}
+
+.vFrontSiSeAuflistungPicGalVerwalt {
+  background-image:url('../img/siteSettingMenu/picGal_b.png') !important;
+}
+
+
+/************************ Empfehlungs Manager Admin ***************************/
+#vFrontEmpfehlungsMangerAdminAllgemein {
+  background-image:url('../img/empfehlungsManager/allgemein_b.png');
+}
+#vFrontEmpfehlungsMangerAdminAllgemein:hover, .vFrontActiveEmpfManagerPoint#vFrontEmpfehlungsMangerAdminAllgemein {
+  background-image:url('../img/empfehlungsManager/allgemein_w.png');
+}
+
+#vFrontEmpfehlungsMangerAdminGeschenke {
+  background-image:url('../img/empfehlungsManager/gifts_b.png');
+}
+#vFrontEmpfehlungsMangerAdminGeschenke:hover, .vFrontActiveEmpfManagerPoint#vFrontEmpfehlungsMangerAdminGeschenke {
+  background-image:url('../img/empfehlungsManager/gifts_w.png');
+}
+
+#vFrontEmpfehlungsMangerAdminEmpfehler {
+  background-image:url('../img/empfehlungsManager/empfehler_b.png');
+}
+#vFrontEmpfehlungsMangerAdminEmpfehler:hover, .vFrontActiveEmpfManagerPoint#vFrontEmpfehlungsMangerAdminEmpfehler {
+  background-image:url('../img/empfehlungsManager/empfehler_w.png');
+}
+
+#vFrontEmpfehlungsMangerAdminAnfragen {
+  background-image:url('../img/empfehlungsManager/anfragen_b.png');
+}
+#vFrontEmpfehlungsMangerAdminAnfragen:hover, .vFrontActiveEmpfManagerPoint#vFrontEmpfehlungsMangerAdminAnfragen {
+  background-image:url('../img/empfehlungsManager/anfragen_w.png');
+}
+
+#vFrontEmpfehlungsMangerAdminExport {
+  background-image:url('../img/empfehlungsManager/export_b.png');
+}
+#vFrontEmpfehlungsMangerAdminExport:hover, .vFrontActiveEmpfManagerPoint#vFrontEmpfehlungsMangerAdminExport {
+  background-image:url('../img/empfehlungsManager/export_w.png');
+}
+
+#vFrontEmpfehlungsMangerAdminDankeSeite {
+  background-image:url('../img/empfehlungsManager/daumen_b.png');
+}
+#vFrontEmpfehlungsMangerAdminDankeSeite:hover, .vFrontActiveEmpfManagerPoint#vFrontEmpfehlungsMangerAdminDankeSeite {
+  background-image:url('../img/empfehlungsManager/daumen_w.png');
+}
+/******************************************************************************/
+
+
+
+.vFrontHpSeEmpfManagerDaumenObenPic, .vFrontHpSeEmpfManagerDaumenUntenPic {
+  float:left;
+  width:260px;
+  text-align:center;
+  background-repeat:no-repeat;
+  background-position:center top;
+  padding-top:190px;
+  margin-top:30px;
+  font-size:18px;
+}
+.vFrontHpSeEmpfManagerDaumenObenPic {
+  margin-left:40px;
+  background-image:url('../img/empfehlungsManager/daumenOben.png');
+}
+.vFrontHpSeEmpfManagerDaumenUntenPic {
+  margin-left:30px;
+  background-image:url('../img/empfehlungsManager/daumenUnten.png');
+  background-position:center 8px;
+}
+
+
+
+.vFrontSiteSettingInhaltHolder {
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:285px;
+  overflow:auto;
+}
+.vFrontSiteSettingInhaltHolder .vFrontFrmHolder {
+  margin:35px 0 20px 48px
+}
+.vFrontSiteSettingInhaltHolder .vFrontFrmHolder input[type="submit"] {
+  width:150px;
+  font-family:Verdana;
+}
+
+
+
+.vFrontFrmListHolder {
+  width:370px;
+}
+.vFrontFrmListHolder .vFrontFrmListHolderHeader {
+  position:relative;
+  height:30px;
+  background-color:#1570A6;
+}
+.vFrontFrmListHolder .vFrontFrmListHolderHeader .vFrontFrmListHolderHeaderUe {
+  position:absolute;
+  top:6px;
+  left:10px;
+  color:#FFF;
+}
+.vFrontFrmListHolder .vFrontFrmListHolderHeader .vFrontFrmListHolderHeaderSort {
+  position:absolute;
+  width:21px;
+  height:21px;
+  top:4px;
+  right:60px;
+  background-image:url('../img/sortIco.png');
+  background-repeat:no-repeat;
+  background-position:2px 2px;
+  cursor:pointer;
+}
+.vFrontFrmListHolder .vFrontFrmListHolderHeader .listSortActive {
+  background-color:#006400;
+}
+.vFrontFrmListHolder .vFrontFrmListHolderHeader .vFrontFrmListHolderHeaderAdd, 
+.vFrontFrmListHolder .vFrontFrmListHolderHeader .vFrontFrmListHolderHeaderPicGalElemAdd {
+  position:absolute;
+  width:20px;
+  height:20px;
+  top:4px;
+  right:35px;
+  background-image:url('../img/plus_w.png');
+  background-repeat:no-repeat;
+  background-position:3px 3px;
+  cursor:pointer;
+}
+.vFrontFrmListHolder .vFrontFrmListHolderHeader .vFrontFrmListHolderHeaderDel {
+  position:absolute;
+  width:20px;
+  height:20px;
+  top:4px;
+  right:10px;
+  background-image:url('../img/trash.png');
+  background-repeat:no-repeat;
+  background-position:2px 2px;
+  cursor:pointer;
+}
+.vFrontFrmListHolder .vFrontFrmListHolderLists {
+  
+}
+.vFrontFrmListHolder .vFrontFrmListHolderLists .vFrontFrmListsElem {
+  border:1px solid #999;
+  /*border-top:none;*/
+}
+.vFrontFrmListHolder .vFrontFrmListHolderLists .vFrontFrmListsElem .vFrontFrmListsElemBild {
+  width:70px;
+  height:50px;
+  overflow:hidden;
+  float:left;
+  margin:5px;
+}
+.vFrontFrmListHolder .vFrontFrmListHolderLists .vFrontFrmListsElem .vFrontFrmListsElemBild img {
+  width:70px;
+}
+.vFrontFrmListHolder .vFrontFrmListHolderLists .vFrontFrmListsElem .vFrontFrmListsElemText {
+  float:left;
+  margin-left:10px;
+  width:278px;
+}
+.vFrontFrmListHolder .vFrontFrmListHolderLists .ui-selected {
+  background-color:#CCC !important;
+  outline:none;
+}
+
+
+
+
+
+
+.vFrontAuswahlImgVerwaltHolderKatSelect {
+  position:absolute;
+  top:18px;
+  right:42px;
+  height:40px;
+}
+.vFrontAuswahlImgVerwaltHolderKatSelect .dd {
+  border: 1px solid #999999;
+  font-size: 12px;
+  width: 220px !important;
+  margin-left:10px;
+}
+.vFrontAuswahlImgVerwaltHolderKatSelect .dd .ddChild {
+  border:1px solid #999;
+  left:-1px;
+}
+.vFrontAuswahlImgVerwaltHolder {
+  position:absolute;
+  top:62px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  overflow:auto;
+  color:#FFF;
+}
+.vFrontAuswahlImgVerwaltHolder .vFrontAuswahlImgElement {
+  float:left;
+  width:156px;
+  height:150px;
+  background-color:#555;
+  margin:20px 0px 0px 16px;
+  font-size:12px;
+  cursor:pointer;
+}
+.vFrontAuswahlImgVerwaltHolder .vFrontAuswahlImgElement:hover {
+  background-color:#1570A6;
+  outline:1px dashed #000;
+}
+.vFrontAuswahlImgVerwaltHolder .vFrontAuswahlImgElement .vFrontAuswahlImgElementPic {
+  margin:8px;
+  width:140px;
+  height:85px;
+  overflow:hidden;
+  
+  /*box-shadow:0px 0px 5px #555;
+  -moz-box-shadow:0px 0px 5px #555;
+  -webkit-box-shadow:0px 0px 5px #555;*/
+}
+.vFrontAuswahlImgVerwaltHolder .vFrontAuswahlImgElement .vFrontAuswahlImgElementPic img {
+  width:140px;
+}
+.vFrontAuswahlImgVerwaltHolder .vFrontAuswahlImgElement .vFrontAuswahlImgElementName {
+  margin:8px 8px 5px 8px;
+  overflow:hidden;
+  height:40px;
+}
+
+
+
+/********** Spalten Settings **********/
+.vSpaltenSettingFrmHolder {
+  margin:40px;
+}
+.vSpaltenSettingFrmHolder label {
+  display:inline-block;
+  width:80px;
+}
+.vSpaltenSettingFrmHolder select {
+  padding:8px;
+  border:1px solid #999;
+  background-color:#FFF;
+  width:300px;
+}
+.vSpaltenSettingFrmHolder input[type="submit"] {
+  padding:7px;
+  width:120px;
+  background-color:#006400;
+  border:1px solid transparent;
+  cursor:pointer;
+  color:#FFF;
+  font-size:12px;
+  margin-left:84px;
+  font-family:Verdana;
+}
+.vSpaltenSettingFrmHolder .vFrmSettingAbstand {
+  height:20px;
+}
+
+.vSpaltenSettingFrmHolder .dd {
+  border:1px solid #999999;
+  font-size:12px;
+  width:241px !important;
+}
+.vSpaltenSettingFrmHolder .dd .ddChild {
+  border:1px solid #999999;
+  left:-1px;
+}
+
+
+
+
+/********** Homepage Einstellungen Auflistungen **********/
+
+.vFrontHpSeAuflistung {
+  margin:20px;
+  color:#333;
+}
+
+.vFrontHpSeAuflistung #vFrontNewTab {
+    display: inline-block;
+    padding: 10px 14px;
+    background-color: #1570a6;
+    color: #FFF;
+    cursor: pointer;
+	margin-bottom: 20px;
+}
+
+.vFrontHpSettingInhaltHolder #vFrontAddTitle {
+display: inline-block;
+    padding: 10px 14px;
+    background-color: #1570a6;
+    color: #FFF;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border: 0;
+    width: 290px !important;
+    margin-left: 48px;
+	margin-top: 30px;
+
+}
+
+.vFrontHpSeAuflistung #vFrontDelTab {
+    position: absolute;
+    top: 6px;
+    right: 7px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/trash_b.png");
+    background-repeat: no-repeat;
+    background-position: 1px 2px;
+    cursor: pointer;
+}
+
+
+
+.vFrontHpSeAuflistung #vFrontNewHash {
+    display: inline-block;
+    padding: 10px 14px;
+    background-color: #1570a6;
+    color: #FFF;
+    cursor: pointer;
+	margin-bottom: 20px;
+}
+
+.vFrontHpSeAuflistung .vFrontDelHash {
+    position: absolute; 
+    top: 6px;
+    right: 7px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/trash_b.png");
+    background-repeat: no-repeat;
+    background-position: 1px 2px;
+    cursor: pointer;
+}
+
+.mmModulFiltersysAdminWindowKatAuswahlHolder .vFrontHpSeAuflistung {
+  margin:8px;
+  color:#333;
+}
+
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungUnUe, 
+.vFrontHpSeAuflistungUnUeAllg {
+  font-size:15px;
+  font-weight:bold;
+  margin-bottom:15px;
+  margin-top:25px;
+}
+.vFrontHpSeAuflistungUnUeAllg {
+  margin-left:20px;
+  color:#333;
+}
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiModule,
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiEl, 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiLay, 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiSprach, 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiUser, 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiNaviArt, 
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiGeschenke, 
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiKontaktformulareB {
+  position:relative;
+  background-image:url("../img/hpSettingsMenu/elemente_b.png");
+  background-repeat:no-repeat;
+  background-position:9px 8px;
+  padding:8px 0px 8px 35px;
+  margin-bottom:4px;
+  margin-right:20px;
+  background-color:#eee;
+  
+  border-radius:4px 0px 0px 4px;
+  -moz-border-radius:4px 0px 0px 4px;
+  -webkit-border-radius:4px 0px 0px 4px;
+}
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiElIsCentral {
+  background-image:url("../img/hpSettingsMenu/elemente_b_central.png") !important;
+}
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiLay {
+  background-image:url("../img/hpSettingsMenu/layout_b.png");
+}
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiSprach {
+  background-image:url("../img/hpSettingsMenu/lang_b.png");
+}
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiUser {
+  background-image:url("../img/hpSettingsMenu/user_b.png");
+}
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiNaviArt {
+  background-image:url("../img/hpSettingsMenu/naviart_b.png");
+}
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiModule {
+  background-image:url("../img/hpSettingsMenu/modul_b.png");
+}
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiGeschenke {
+  background-image:url("../img/empfehlungsManager/gifts_b.png");
+}
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiEmpfehler {
+  background-image:url("../img/empfehlungsManager/empfehler_b.png");
+}
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiKontaktformulareB {
+  background-image:url("../img/mail.png");
+}
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiEmpfehlerAnfrage {
+  background-image:url("../img/mail.png");
+}
+
+.vFrontTimeAuflistung .vFrontHpSeAuflistungLiLay {
+ background-image:url("../img/time_b.png");
+}
+
+
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiModule:hover,
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiEl:hover, 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiLay:hover, 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiSprach:hover, 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiUser:hover, 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiNaviArt:hover, 
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiGeschenke:hover, 
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiKontaktformulareB:hover {
+  background-color:#ccc;
+}
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiModule .vFrontHpSeAuflistungLiModuleName, 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiEl .vFrontHpSeAuflistungLiElName, 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiLay .vFrontHpSeAuflistungLiLayName, 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiSprach .vFrontHpSeAuflistungLiSprachName, 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiUser .vFrontHpSeAuflistungLiUserName, 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiNaviArt .vFrontHpSeAuflistungLiNaviArtName, 
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiGeschenke .vFrontEmpfAuflistungLiGeschenkeName, 
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiKontaktformulareB .vFrontEmpfAuflistungLiKontaktformulareBName {
+  
+}
+.vFrontHpSeAuflistungLiElMenuHold, 
+.vFrontHpSeAuflistungLiLayMenuHold, 
+.vFrontHpSeAuflistungLiSprachMenuHold, 
+.vFrontHpSeAuflistungLiUserMenuHold, 
+.vFrontHpSeAuflistungLiNaviArtMenuHold {
+  position:absolute;
+  top:0px;
+  bottom:0px;
+  right:0px;
+  width:65px;
+}
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiEl .vFrontHpSeAuflistungLiElChangeSettings {
+  position:absolute;
+  top:6px;
+  right:67px;
+  width:20px;
+  height:20px;
+  background-image:url("../img/elemCode_b.png");
+  background-repeat:no-repeat;
+  background-position:2px 2px;
+  cursor:pointer;
+}
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiEl .vFrontHpSeAuflistungLiElChange, 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiLay .vFrontHpSeAuflistungLiLayChange, 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiSprach .vFrontHpSeAuflistungLiSprachChange, 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiUser .vFrontHpSeAuflistungLiUserChange, 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiNaviArt .vFrontHpSeAuflistungLiNaviArtChange, 
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiGeschenke .vFrontEmpfAuflistungLiGeschenkeChange, 
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiEmpfehler .vFrontEmpfAuflistungLiEmpfehlerChange, 
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiKontaktformulareB .vFrontEmpfAuflistungLiKontaktformulareBChange ,
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiKontaktformulareB .vFrontEditHash, 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiLay .vFrontEditHash, 
+.mmModulTimeAdminWindowHolder .changeTimeText {
+  position:absolute;
+  top:6px;
+  right:37px;
+  width:20px;
+  height:20px;
+  background-image:url("../img/change_b.png");
+  background-repeat:no-repeat;
+  background-position:2px 2px;
+  cursor:pointer;
+}
+
+.mmModulTimeAdminWindowHolder .vFrontHpSeAuflistung {margin-left: 0;}
+
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiElSys .vFrontHpSeAuflistungLiElChange {
+  right:7px;
+}
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiEl .vFrontHpSeAuflistungLiElDel, 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiLay .vFrontHpSeAuflistungLiLayDel, 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiSprach .vFrontHpSeAuflistungLiSprachDel, 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiUser .vFrontHpSeAuflistungLiUserDel, 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiNaviArt .vFrontHpSeAuflistungLiNaviArtDel, 
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiGeschenke .vFrontEmpfAuflistungLiGeschenkeDel, 
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiEmpfehler .vFrontEmpfAuflistungLiEmpfehlerDel, 
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiKontaktformulareB .vFrontEmpfAuflistungLiKontaktformulareBDel, .mmModulTimeAdminWindowHolder .deleteTimeText {
+  position:absolute;
+  top:6px;
+  right:7px;
+  width:20px;
+  height:20px;
+  background-image:url("../img/trash_b.png");
+  background-repeat:no-repeat;
+  background-position:1px 2px;
+  cursor:pointer;
+}
+
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiEmpfehler .vFrontEmpfAuflistungLiEmpfehlerShowData, 
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiEmpfehlerAnfrage .vFrontEmpfAuflistungLiEmpfehlerAnfrageShowData {
+  position:absolute;
+  top:6px;
+  right:7px;
+  width:20px;
+  height:20px;
+  background-image:url("../img/show_b.png");
+  background-repeat:no-repeat;
+  background-position:1px 2px;
+  cursor:pointer;
+}
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiEl .vFrontEmpfAuflistungLiEmpfehlerShowData {
+  position:absolute;
+  top:6px;
+  right:66px;
+  width:20px;
+  height:20px;
+  background-image:url("../img/show_b.png");
+  background-repeat:no-repeat;
+  background-position:1px 2px;
+  cursor:pointer;
+}
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiEmpfehler .vFrontEmpfAuflistungLiEmpfehlerShowAnfragen {
+  position:absolute;
+  top:6px;
+  right:37px;
+  width:20px;
+  height:20px;
+  background-image:url("../img/mail.png");
+  background-repeat:no-repeat;
+  background-position:1px 2px;
+  cursor:pointer;
+}
+
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiEmpfehlerAnfrage .vFrontEmpfAuflistungLiEmpfehlerAnfrageSetBuchung {
+  position:absolute;
+  top:6px;
+  right:37px;
+  width:20px;
+  height:20px;
+  background-image:url("../img/setBuchung.png");
+  background-repeat:no-repeat;
+  background-position:1px 2px;
+  cursor:pointer;
+}
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiEmpfehlerAnfrage .vFrontEmpfAuflistungLiEmpfehlerAnfrageDelBuchung {
+  position:absolute;
+  top:6px;
+  right:37px;
+  width:20px;
+  height:20px;
+  background-image:url("../img/delBuchung.png");
+  background-repeat:no-repeat;
+  background-position:1px 2px;
+  cursor:pointer;
+}
+
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiEmpfehlerAnfrageIsBuchungTrue {
+  background-color:#d0f5a9;
+}
+.vFrontHpSeAuflistung .vFrontEmpfAuflistungLiEmpfehlerAnfrageIsBuchungTrue:hover {
+  background-color:#d8f6ce;
+}
+
+.vFrontHpSeListHidden {
+  background-color:#F6CECE !important;
+}
+
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiModule.vFrontIsInstallModuleOk {
+  background-color:#D0F5A9;
+}
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiModule.vFrontIsInstallModuleOk:hover {
+  background-color:#D8F6CE;
+}
+
+.vFrontHpSeAuflistungUnUeOwnElems {
+  float:left;
+}
+
+#vFrontOwnElementeSortierenBtn,
+#vFrontNeuesElementBtn, 
+#vFrontNeuesSeitenlayoutBtn, 
+#vFrontNeueSpracheBtn, 
+#vFrontNeuerUserInCmsBtn, 
+#vFrontNeueNaviArtInCmsBtn, 
+#vFrontNeuePicGalSeBtn, 
+#vFrontNeuesEmpfManagerGeschenkBtn {
+  float:right;
+  background-color:#1570A6;
+  padding:7px 0px;
+  text-align:center;
+  width:130px;
+  color:#FFF;
+  cursor:pointer;
+  margin:-48px 20px 0px 0px;
+}
+#vFrontOwnElementeSortierenBtn,
+#vFrontNeuesElementBtn {
+  margin-top:14px;
+}
+#vFrontOwnElementeSortierenBtn {
+  width:155px;
+}
+#vFrontOwnElementeSortierenBtn.vFrontOwnElementeSortierenBtnIsActive {
+  background-color:#006400;
+}
+.vFrontOwnElementeSortierenBtnIsActiveMovePointer {
+  cursor:move;
+}
+#vFrontNeuesSeitenlayoutBtn, 
+#vFrontNeuesEmpfManagerGeschenkBtn {
+  width:160px;
+}
+#vFrontNeueNaviArtInCmsBtn {
+  width:170px;
+}
+#vFrontNeuePicGalSeBtn {
+  width:165px;
+  margin:-27px 40px 5px 0px;
+}
+
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungLiEl .vFrontHpSeAuflistungLiElInstall, 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungModuleMM .vFrontHpSeAuflistungLiModuleInstall {
+  position:absolute;
+  top:6px;
+  right:7px;
+  width:20px;
+  height:20px;
+  background-image:url("../img/installPlus.png");
+  background-repeat:no-repeat;
+  background-position:1px 2px;
+  cursor:pointer;
+} 
+.vFrontHpSeAuflistung .vFrontHpSeAuflistungModuleMM .vFrontHpSeAuflistungLiModuleDeInstall {
+  position:absolute;
+  top:6px;
+  right:7px;
+  width:20px;
+  height:20px;
+  background-image:url("../img/deinstallMinus.png");
+  background-repeat:no-repeat;
+  background-position:1px 2px;
+  cursor:pointer;
+}
+
+.vSiteElemBox .vFrontOwnElemTextInner {
+    padding-top: 20px;
+}
+
+.vSiteElemBox .vSiteElemTextOwnBearLeiste {
+padding-top: 20px;
+    margin-top: 20px;}
+
+
+/********** Eigene Elemente Bearbeitung **********/
+.vFrontOwnElemPicHolder, .vFrontOwnElemTextHolder {
+  position:relative;
+  min-height:10px;
+}
+.vFrontOwnElemPicHolder:hover, .vFrontOwnElemTextHolder:hover {
+  outline:2px solid #d35400;
+}
+.vCmsShowNoOutlineImportant {
+  outline:none !important;
+}
+.vFrontOwnElemPicHolder .vSiteElemPicOwnBearLeiste, 
+.vFrontOwnElemTextHolder .vSiteElemTextOwnBearLeiste {
+  font-family:Verdana;
+  font-size:13px;
+  display:none;
+  position:absolute;
+  top:-26px;
+  left:-1px;
+  right:0px;
+  height:26px;
+  background-color:#d35400;
+  color:#FFF;
+  line-height:normal;
+  font-weight:normal;
+  font-style:normal;
+  z-index:1000;
+}
+.vFrontOwnElemPicHolder:hover .vSiteElemPicOwnBearLeiste, 
+.vFrontOwnElemTextHolder:hover .vSiteElemTextOwnBearLeiste {
+  display:block;
+}
+.vFrontOwnElemPicHolder .vSiteElemPicOwnBearLeiste .vSiteElemPicOwnBearLeisteUe,
+.vFrontOwnElemTextHolder .vSiteElemTextOwnBearLeiste .vSiteElemTextOwnBearLeisteUe {
+  position:absolute;
+  top:3px;
+  left:8px;
+  
+  z-index:1;
+}
+.vFrontOwnElemPicHolder .vSiteElemPicOwnBearLeiste .vSiteElemPicOwnBearLeisteLink {
+  position:absolute;
+  top:2px;
+  right:8px;
+  width:22px;
+  height:22px;
+  background-image:url('../img/linkS.png');
+  background-repeat:no-repeat;
+  background-position:4px 2px;
+  background-size:15px;
+  cursor:pointer;
+  
+  z-index:2;
+}
+.vFrontOwnElemTextHolder .vSiteElemTextOwnBearLeiste .vSiteElemTextOwnBearLeisteChange {
+  position:absolute;
+  top:2px;
+  right:8px;
+  width:22px;
+  height:22px;
+  background-image:url('../img/change.png');
+  background-repeat:no-repeat;
+  background-position:4px 2px;
+  background-size:15px;
+  cursor:pointer;
+  
+  z-index:2;
+}
+.vFrontOwnElemTextHolder .vSiteElemTextOwnBearLeiste .vSiteElemTextOwnBearLeisteSave {
+  display:none;
+  position:absolute;
+  top:2px;
+  right:36px;
+  width:22px;
+  height:22px;
+  background-image:url('../img/save.png');
+  background-repeat:no-repeat;
+  background-position:4px 2px;
+  background-size:15px;
+  cursor:pointer;
+  
+  z-index:2;
+}
+.vFrontOwnElemTextHolder .vSiteElemTextOwnBearLeiste .vSiteElemTextOwnBearLeisteCancel {
+  display:none;
+  position:absolute;
+  top:2px;
+  right:8px;
+  width:22px;
+  height:22px;
+  background-image:url('../img/closeX.png');
+  background-repeat:no-repeat;
+  background-position:4px 2px;
+  background-size:15px;
+  cursor:pointer;
+  
+  z-index:2;
+}
+.vFrontOwnElemPicHolder .vSiteElemPicOwnBearLeiste .vSiteElemPicOwnBearLeisteDel {
+  position:absolute;
+  top:2px;
+  right:6px;
+  width:22px;
+  height:22px;
+  background-image:url('../img/trash.png');
+  background-repeat:no-repeat;
+  background-position:4px 2px;
+  background-size:15px;
+  cursor:pointer;
+  
+  z-index:2;
+}
+.vFrontOwnElemTextHolder.bearStateOn > .vSiteElemTextOwnBearLeiste {
+  display:block !important;
+  background-color:#006400 !important;
+}
+.vFrontOwnElemTextHolder.bearStateOn {
+  outline:2px solid #006400 !important;
+}
+.vFrontOwnElemTextHolder.bearStateOn > .vSiteElemTextOwnBearLeiste > .vSiteElemTextOwnBearLeisteSave, 
+.vFrontOwnElemTextHolder.bearStateOn > .vSiteElemTextOwnBearLeiste > .vSiteElemTextOwnBearLeisteCancel {
+  display:block !important;
+}
+.vFrontOwnElemTextHolder.bearStateOn > .vSiteElemTextOwnBearLeiste > .vSiteElemTextOwnBearLeisteChange {
+  display:none !important;
+}
+
+.vFrontOwnElemPicHolder .vFrontOwnElemPicButtonNew {
+  display:none;
+  position:absolute;
+  top:5px;
+  left:5px;
+  padding:6px 12px;
+  background-color:#d35400;
+  color:#FFF;
+  font-size:11px;
+  font-family:Verdana;
+  line-height:normal;
+  
+  cursor:pointer;
+  z-index:10;
+}
+.vFrontOwnElemPicHolder:hover .vFrontOwnElemPicButtonNew {
+  display:block;
+}
+
+
+
+/********** Allgemeine Setting Forms Css **********/
+.vFrontSmallSeFrmHolder {
+  margin:40px;
+  color:#333;
+}
+.vFrontSmallSeFrmHolder label {
+  display:inline-block;
+  width:80px;
+  font-weight:normal;
+  margin-bottom:0px;
+}
+.vFrontSmallSeFrmHolder select, .vFrontSmallSeFrmHolder input[type="text"] {
+  padding:8px;
+  border:1px solid #999;
+  background-color:#FFF;
+  width:250px;
+  box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+}
+.vFrontSmallSeFrmHolder .vFrontFrmListsElem .filterDescription{
+padding: 4px;
+    border: 1px solid #999;
+    background-color: #FFF;
+    width: 347px;
+    margin: 0 5px 2px 5px;
+  box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+}
+
+.vFrontFrmListsElemTextFilter {
+margin-top: 20px;}
+
+.vFrontFrmListsElemFilter {
+margin-bottom: 5px;}
+
+.vFrontSmallSeFrmHolder input[type="submit"] {
+  padding:7px;
+  width:120px;
+  background-color:#006400;
+  border:1px solid transparent;
+  cursor:pointer;
+  color:#FFF;
+  font-size:12px;
+  margin-left:84px;
+  font-family:Verdana;
+}
+.vFrontSmallSeFrmHolder .vFrontSmallSeFrmHolderAbstand {
+  height:20px;
+}
+
+.vFrontSmallSeFrmHolder .dd {
+  border:1px solid #999999;
+  font-size:12px;
+  width:241px !important;
+}
+.vFrontSmallSeFrmHolder .dd .ddChild {
+  border:1px solid #999999;
+  left:-1px;
+}
+
+
+
+
+/********** Front Admin Linking Window **********/
+#linkingDelBtn, #linkingDelBtnOnLangMM {
+  background-color:#C0392B;
+}
+
+
+
+
+/********** Shop Modul **********/
+.vFrontModulShopList {
+  position:relative;
+  min-height:80px;
+}
+.vFrontModulShopList #vFrontModulShopNewProductBtn {
+  float:right;
+  background-color:#1570A6;
+  color:#FFF;
+  width:130px;
+  padding:8px 0px;
+  margin:20px 25px 0px 0px;
+  text-align:center;
+  cursor:pointer;
+}
+.vFrontModulShopList .vFrontModulShopListHolder {
+  margin:25px 25px 20px 25px;
+}
+
+.vFrontModulShopListHolder .vFrontModulShopListElem {
+  position:relative;
+  background-image:url("../img/siteSettingMenu/shop_b.png");
+  background-repeat:no-repeat;
+  background-position:9px 8px;
+  padding:8px 0px 8px 35px;
+  margin-bottom:4px;
+  background-color:#eee;
+  
+  border-radius:4px 0px 0px 4px;
+  -moz-border-radius:4px 0px 0px 4px;
+  -webkit-border-radius:4px 0px 0px 4px;
+}
+.vFrontModulShopListHolder .vFrontModulShopListElem:hover {
+  background-color:#ccc;
+}
+.vFrontModulShopListElemNavi {
+  
+}
+.vFrontModulShopListElemNavi .vFrontModulShopListElemNaviChange {
+  position:absolute;
+  top:6px;
+  right:37px;
+  width:20px;
+  height:20px;
+  background-image:url("../img/change_b.png");
+  background-repeat:no-repeat;
+  background-position:2px 2px;
+  cursor:pointer;
+}
+.vFrontModulShopListElemNavi .vFrontModulShopListElemNaviDel {
+  position:absolute;
+  top:6px;
+  right:7px;
+  width:20px;
+  height:20px;
+  background-image:url("../img/trash_b.png");
+  background-repeat:no-repeat;
+  background-position:1px 2px;
+  cursor:pointer;
+}
+
+
+.vFrontShopProductFormHolder {
+  margin:20px 50px 20px 50px;
+}
+.vFrontShopProductFormHolder textarea {
+  height:150px;
+}
+#vFrontShopProductPreis, #vFrontShopProductSteuer {
+  width:150px;
+}
+
+#vFrontShopProductNewBildHolder {
+  display:none;
+  width:168px;
+  height:90px;
+  overflow:hidden;
+}
+#vFrontShopProductNewBildHolder img {
+  width:100%;
+}
+
+#vFrontShopProductNewBildBtn {
+  background-color:#1570A6;
+  color:#FFF;
+  width:168px;
+  padding:6px 0px;
+  margin:0px 25px 0px 0px;
+  text-align:center;
+  cursor:pointer;
+  font-size:12px;
+}
+
+#vFrontShopProductShowBildverwaltung {
+  float:right;
+  background-color:#1570A6;
+  color:#FFF;
+  width:175px;
+  padding:6px 0px;
+  margin:-28px 0px 0px 0px;
+  text-align:center;
+  cursor:pointer;
+  font-size:12px;
+}
+
+#vFrontShopProductRabatt {
+  width:145px;
+  display:none;
+}
+#vFrontShopProductRabattChange {
+  width:140px;
+  margin-right:10px;
+}
+
+.vFrontShopProductFormHolder .dd {
+  width:166px !important;
+  margin-right:10px;
+}
+
+
+
+/********** Seiten Auflistungs Window **********/
+.vFrontSeitenAuflistungAuswahl {
+  margin:30px;
+}
+.vFrontSeitenAuflistungAuswahl .vFrontSeitenBaumHolder {
+  margin:0px;
+}
+.vFrontSeitenAuflistungAuswahl .vFrontBaumElem {
+  background-color:#EEEEEE;
+  cursor:pointer;
+  color:#333;
+  
+  padding:7px 6px 7px 28px;
+  height:15px;
+}
+.vFrontSeitenAuflistungAuswahl .vFrontBaumElem:hover {
+  background-color:#CCC;
+}
+.vFrontSeitenAuflistungAuswahl .vFrontSeitBaumElem1, .vFrontSeitenAuflistungAuswahl .vFrontSeitBaumElem2, .vFrontSeitenAuflistungAuswahl .vFrontSeitBaumElem3, .vFrontSeitenAuflistungAuswahl .vFrontSeitBaumElem4, .vFrontSeitenAuflistungAuswahl .vFrontSeitBaumElem5 {
+  margin-left:24px;
+}
+
+.vFrontSeitenAuflistungAuswahl .vFrontIsSiteCur {
+  background-image:url('../img/siteS_Black.png');
+}
+.vFrontSeitenAuflistungAuswahl .vFrontIsSiteCur:hover {
+  background-image:url('../img/siteS_Black.png');
+}
+.vFrontSeitenAuflistungAuswahl .vFrontIsBlogCur {
+  background-image:url('../img/beitragS_Black.png');
+}
+.vFrontSeitenAuflistungAuswahl .vFrontIsBlogCur:hover {
+  background-image:url('../img/beitragS_Black.png');
+}
+.vFrontSeitenAuflistungAuswahl .vFrontIsNaviCur {
+  background-image:url('../img/naviS_Black.png');
+  opacity:.4;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter:alpha(opacity=40);
+}
+.vFrontSeitenAuflistungAuswahl .vFrontIsNaviCur:hover {
+  background-image:url('../img/naviS_Black.png');
+  background-color:#EEE !important;
+}
+
+.vFrontSeitenAuflistungAuswahl .ui-selected {
+  color:#FFF;
+  outline:none;
+}
+
+#vFrontListButtonSelectedNow {
+  background-color:#1570A6;
+  color:#FFFFFF;
+  cursor:pointer;
+  margin:0px 0px 30px 0px;
+  padding:8px 0px;
+  text-align:center;
+  width:130px;
+}
+
+.vFrontListElemIUser {
+  padding:4px 10px;
+  border:1px solid #999;
+}
+
+.vFrontKategorienAuflistungAuswahl .vFrontIsSiteCur {
+  background-image:url('../img/katS_Black.png');
+  background-position:5px 8px;
+}
+.vFrontKategorienAuflistungAuswahl .vFrontIsSiteCur:hover {
+  background-image:url('../img/katS_Black.png');
+}
+.vFrontKategorienAuflistungAuswahl .vFrontIsPicGalElemCur {
+  background-image:url("../img/siteSettingMenu/picGal_b.png");
+  background-position:5px 8px;
+  background-repeat:no-repeat;
+}
+
+
+
+/********** Sitemap Generator **********/
+.vFrontSitemapGeneratorHolder {
+  margin:40px 0px 0px 0px;
+}
+.vFrontSitemapGeneratorHolder #vFrontSitemapGeneratorSendBtn {
+  display:inline-block;
+  padding:10px 14px;
+  background-color:#1570a6;
+  color:#FFF;
+  cursor:pointer;
+}
+.vFrontSitemapGeneratorHolder #vFrontSitemapGeneratorLoader {
+  display:none;
+  margin-left:32px;
+}
+.vFrontSitemapGeneratorHolder #vFrontSitemapGeneratorOkGenerate {
+  display:none;
+  margin-left:32px;
+}
+.vFrontSitemapGeneratorHolder #vFrontSitemapGeneratorShowUri {
+  margin:25px 0px 30px 0px;
+  display:none;
+}
+.vFrontSitemapGeneratorHolder #vFrontSitemapGeneratorShowUri a {
+  color:#333;
+  text-decoration:underline;
+}
+.vFrontSitemapGeneratorHolder #vFrontSitemapGeneratorShowUri a:hover {
+  text-decoration:none;
+}
+.vFrontSitemapGeneratorHolder #vFrontAusgabeSitemapFile {
+  border:1px solid #999;
+  box-shadow:1px 1px 2px #999 inset;
+  display:none;
+  height:350px;
+  max-height:350px;
+  min-height:350px;
+  margin-top:0px;
+  padding:6px;
+  width:585px;
+  max-width:585px;
+  min-width:585px;
+}
+
+
+
+.vFrontLinkingArtMenuPoint {
+  background-color:#CCC;
+  padding:6px 0px;
+  text-align:center;
+  width:85px;
+  float:left;
+  cursor:pointer;
+  margin-right:1px;
+  font-size:13px;
+}
+.vFrontLinkingArtMenuPoint.vFrontActiveArtPoint {
+  background-color:#1570a6;
+  color:#FFF;
+  cursor:default;
+  box-shadow:0px 0px 4px #333 inset;
+  -moz-box-shadow:0px 0px 4px #333 inset;
+  -webkit-box-shadow:0px 0px 4px #333 inset;
+}
+
+.linkingLinkNormalAnzeige, 
+.linkingLinkSeitenAnzeige, 
+.linkingLinkBildAnzeige, 
+.linkingLinkDateiAnzeige {
+  display:none;
+}
+
+#linkingShowSeitenAuswahlWin, 
+#linkingShowBildAuswahlWin,
+#linkingShowDateiAuswahlWin {
+  margin-top:12px;
+}
+
+#linkingShowSeitenAuswahlWinText, 
+#linkingShowBildAuswahlWinText, 
+#linkingShowDateiAuswahlWinText {
+  display:inline-block;
+  margin-bottom:5px;
+  margin-right:10px;
+  max-width:265px;
+}
+
+#linkingShowSeitenAuswahlWinBtn, 
+#linkingShowBildAuswahlWinBtn, 
+#linkingShowDateiAuswahlWinBtn {
+  display:inline-block;
+  background-color:#1570a6;
+  color:#FFF;
+  padding:5px 10px;
+  cursor:pointer;
+  margin-bottom:10px;
+}
+
+
+
+
+
+.vFrontSetBigWindowClassNow {
+  height:auto !important;
+  bottom:50px !important;
+  top:50px !important;
+}
+
+
+
+.vFrontSmallAliasElemShowAuswahlWindow {
+  display:inline-block;
+  background-color:#1570a6;
+  height:34px;
+  width:34px;
+  float:right;
+  margin-right:73px;
+  cursor:pointer;
+  background-image:url('../img/search.png');
+  background-repeat:no-repeat;
+  background-position:center center;
+}
+.vFrontSmallSiteNoSiteOnlyNaviShowAuswahlWindow {
+  display:inline-block;
+  background-color:#1570a6;
+  height:34px;
+  width:34px;
+  cursor:pointer;
+  background-image:url('../img/search.png');
+  background-repeat:no-repeat;
+  background-position:center center;
+  vertical-align:top;
+}
+
+
+
+.vFrontCurSelemToChange {
+  margin-left:20px;
+  background-color:#FDE3A7 !important;
+  background-image:url("../img/hpSettingsMenu/elemente_b.png") !important;
+  background-repeat:no-repeat;
+  background-position:10px 7px;
+  padding-left:40px;
+}
+.vFrontCurSelemToChange:hover {
+  background-color:#CCC !important;
+}
+
+
+
+
+/*********** Für Farbänderung wenn Element Verknüpft ***********/
+.vFrontCurAliasElemColor {
+  
+}
+.vFrontCurAliasElemColor.vSiteElemBox:hover {
+  outline:2px solid #336E7B;
+}
+.vFrontCurAliasElemColor.vSiteElemBox .vSiteElemBoxBearLeiste {
+  background-color:#336E7B;
+}
+
+
+
+
+/*********** Für Google Original Ansicht Nachbau ***********/
+#vFrontGoogleSearchOrigShow {
+  font-family:arial;
+  line-height:normal;
+  text-decoration:none;
+  font-style:normal;
+}
+#vFrontGoogleSearchOrigShow .vFrontGoogleSearchOrigShowHolder {
+  margin-top:-10px;
+  margin-bottom:20px;
+  border:1px solid #CCC;
+  padding:10px 5px;
+  width:330px;
+  background-color:#EEE;
+}
+#vFrontGoogleSearchOrigShow .vFrontGoogleSearchOrigShowTitle {
+  color:#1a0dab;
+  font-size:14px;
+  cursor:pointer;
+}
+#vFrontGoogleSearchOrigShow .vFrontGoogleSearchOrigShowTitle:hover {
+  text-decoration:underline;
+}
+#vFrontGoogleSearchOrigShow .vFrontGoogleSearchOrigShowUri {
+  color:#006621;
+  font-size:10px;
+}
+#vFrontGoogleSearchOrigShow .vFrontGoogleSearchOrigShowDesc {
+  color:#545454;
+  font-size:9px;
+}
+
+
+
+
+/*********** CMS Infos ***********/
+.vFrontCmsInfosInWindowHolder {
+  padding:40px;
+  font-size:14px;
+}
+.vFrontCmsInfosInWindowHolder .vFrontCmsInfosInWindowLabel {
+  float:left;
+  width:130px;
+  text-decoration:underline;
+}
+.vFrontCmsInfosInWindowHolder .vFrontCmsInfosInWindowText {
+  float:left;
+  width:272px;
+}
+.vFrontCmsInfosInWindowHolder .vFrontCmsInfosInWindowTextUpdate {
+  width:80px;
+}
+.vFrontCmsInfosInWindowHolder .vFrontCmsInfosInWindowAbstand {
+  height:20px;
+}
+
+.vFrontCmsInfosInWindowHolder .vFrontCmsInfosInWindowTextUpdateBtn {
+  float:left;
+  font-size:13px;
+  font-weight:normal;
+  background-color:#1570a6;
+  color:#FFF;
+  padding:4px 10px;
+  cursor:pointer;
+  margin-top:-3px;
+}
+
+.vFrontCmsInfosInWindowHolder .vFrontCmsInfosInWindowTextUpdateInfoPos {
+  
+}
+
+.vFrontCmsInfosInWindowHolder .vFrontCmsInfosInWindowTextUpdateInfoPos .vFrontCmsInfosInWindowTextUpdateInfoNoUpdate {
+  color:green;
+}
+
+.vFrontCmsInfosInWindowHolder .vFrontCmsInfosInWindowTextUpdateInfoPos #vFrontCmsInfosInWindowUpdateCenterBtn {
+  display:block;
+  width:180px;
+  padding:6px 0px;
+  text-align:center;
+  background-color:#CCC;
+  margin-top:18px;
+  color:#333;
+  font-size:13px;
+  text-decoration:none;
+  outline:none;
+}
+
+
+
+
+
+.vFrontSeitenAuflistungAuswahlNaviArtHolder {
+  margin:25px 30px 0px 32px;
+  text-align:right;
+}
+.vFrontSeitenAuflistungAuswahlNaviArtHolder .dd {
+  text-align:left;
+  border: 1px solid #999999;
+  font-size: 12px;
+  margin-left: 10px;
+  width: 220px !important;
+}
+.vFrontSeitenAuflistungAuswahlNaviArtHolder .dd .ddChild {
+  border: 1px solid #999;
+  left: -1px;
+}
+
+
+
+
+
+#vFrontImportMetaDescInTextareaSeo, 
+#vFrontImportMetaTitleInTextboxSeo, 
+#vFrontImportMetaDescInTextareaSeoLang, 
+#vFrontImportMetaTitleInTextboxSeoLang {
+  display:inline-block;
+  width:16px;
+  height:16px;
+  line-height:normal;
+  background-image:url('../img/import-seo.png');
+  background-repeat:no-repeat;
+  background-position:center center;
+  vertical-align:top;
+  margin-left:3px;
+  cursor:pointer;
+}
+
+
+
+
+
+
+#vFrontEmpfManagerMailExportBtnGo {
+  cursor:pointer;
+  padding:10px 0px;
+  background-color:#1570a6;
+  color:#FFF;
+  text-align:center;
+  width:250px;
+  margin-top:38px;
+}
+.vFrontEmpfAuflistungLiEmpfehlerInfoHolderMM {
+  margin-top:5px;
+}
+.vFrontEmpfAuflistungLiEmpfehlerInfoHolderMM .vFrontEmpfAuflistungLiEmpfehlerInfoAnfragenMM {
+  display:inline-block;
+}
+.vFrontEmpfAuflistungLiEmpfehlerInfoHolderMM .vFrontEmpfAuflistungLiEmpfehlerInfoBuchungenMM {
+  display:inline-block;
+  margin-left:30px;
+}
+.vFrontEmpfAuflistungLiEmpfehlerInfoHolderMM .vFrontEmpfAuflistungLiEmpfehlerInfoLinkClicksMM {
+  display:inline-block;
+  margin-left:30px;
+}
+.vFrontEmpfAuflistungLiEmpfehlerInfoHolderMM .vFrontEmpfAuflistungLiEmpfehlerInfoLinkMM {
+  margin-top:5px;
+}
+.vFrontEmpfAuflistungLiEmpfehler {
+  margin-bottom:6px !important;
+}
+.vFrontEmpfAuflistungLiEmpfehler .vFrontEmpfAuflistungLiEmpfehlerName {
+  font-weight:bold;
+}
+
+
+.vFrontEmpfAuflistungLiEmpfehlerAnfrageSelectHolderMM {
+  position:absolute;
+  right:20px;
+  top:-10px;
+}
+.vFrontEmpfAuflistungLiEmpfehlerAnfrageSelectHolderMM .dd {
+  border: 1px solid #999999;
+  font-size: 12px;
+  width: 250px !important;
+}
+.vFrontEmpfAuflistungLiEmpfehlerAnfrageSelectHolderMM .dd .ddChild {
+  border:1px solid #999;
+  left:-1px;
+}
+
+.vFrontEmpfAuflistungLiEmpfehlerSucheFrmHolderMM {
+  position:absolute;
+  right:39px;
+  top:20px;
+}
+.vFrontEmpfAuflistungLiEmpfehlerSucheFrmHolderMM input {
+  padding:6px;
+  background-color:#FFF;
+  border:1px solid #999;
+  width:290px;
+}
+
+.vFrontEmpfehlerAnfrageShowHtmlMailHolder {
+  margin:30px;
+  margin-right:0px;
+  font-family:Arial;
+  font-size:15px;
+}
+.vFrontEmpfehlerAnfrageShowHtmlMailHolder table {
+  width:520px;
+}
+.vFrontEmpfehlerAnfrageShowHtmlMailHolder table td {
+  padding:6px 0px;
+  vertical-align:top;
+}
+
+
+#vFrontEmaFbAppPostBildAusgabeSmallSy {
+  display:inline-block;
+  width:128px;
+  height:80px;
+  background-color:#eee;
+  text-align:center;
+  overflow:hidden;
+}
+#vFrontEmaFbAppPostBildAusgabeSmallSy img {
+  width:100%;
+}
+#vFrontEmaFbAppPostBildChangeBtnSy {
+  display:table;
+  margin-left:150px;
+  margin-top:-30px;
+
+  padding:6px 12px;
+  background-color:#336E7B;
+  color:#FFF;
+  font-size:11px;
+  font-family:Verdana;
+  
+  box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+  
+  cursor:pointer;
+}
+
+
+
+/*********** Für Kontaktformular Builder ***********/
+.vFrontKontaktFormBuilderMenuBtnMM {
+  background-color:#1570a6;
+  color:#FFF;
+  text-align:center;
+  padding:8px 0px;
+  margin:5px 25px 20px 25px;
+  cursor:pointer;
+}
+
+
+.vFrontKontaktFormBuilderMenuBtnIsSaveMM {
+  background-color:#006400;
+}
+
+
+.vFrontKontaktFormBuilderMenuBtnIsCancelMM {
+  background-color:#c0392b;
+}
+
+
+.vFrontKontaktFormBuilderDragElemMM {
+  background-color:#333;
+  color:#FFF;
+  padding:8px 0px 8px 10px;
+  margin:0px 0px 10px 25px;
+  cursor:move;
+  width:210px;
+  
+  box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+}
+.vFrontKontaktFormBuilderDragElemMM i {
+  vertical-align:middle;
+  font-size:16px;
+  margin-right:12px;
+}
+
+
+.vFrontKontaktFormBuilderDragPlaceOuter {
+  min-height:25px;
+  /*background-image:url('../img/bg-lines.gif');*/
+  background-image:url('../img/stripe.png');
+  background-color:#EEE;
+}
+.vFrontKontaktFormBuilderDragPlaceInner {
+  min-height:25px;
+  /*background-image:url('../img/bg-lines.gif');*/
+  background-image:url('../img/stripe.png');
+  background-color:#FFF;
+}
+.ui-state-dragger-kontakt-builder {
+  
+}
+.ui-state-dragger-kontakt-builder-hover {
+  border-bottom:2px solid #1570A6;
+  border-top:2px solid #1570A6;
+  min-height:40px;
+  background-image:url('../img/plusEl.png');
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-color:#EEE;
+}
+
+
+.vFrontKontaktFormBuilderDragHolder fieldset {
+  position:relative;
+  border:3px solid #333;
+  margin:20px 0px;
+  padding:20px;
+}
+.vFrontKontaktFormBuilderDragHolder fieldset legend {
+  border:none;
+  line-height:normal;
+  display:inline;
+  font-size:13px;
+  margin-bottom:0px;
+  width:auto;
+  padding:0px 5px;
+  font-weight:bold;
+  cursor:move;
+}
+
+
+.vFrontKontaktFormBuilderElemIsSetStruct {
+  position:relative;
+  background-color: #eee;
+  /*background-image: url("../img/hpSettingsMenu/elemente_b.png");
+  background-position: 9px 8px;
+  background-repeat: no-repeat;*/
+  margin-bottom: 6px;
+  margin-top: 6px;
+  padding: 8px 0 8px 10px;
+  position: relative;
+  
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+.vFrontKontaktFormBuilderElemIsSetStruct i {
+  font-size:18px;
+  vertical-align:middle;
+  margin-right:8px;
+}
+
+.vFrontKontaktFormBuilderElemIsSetStructChangeBtn,
+.vFrontKontaktFormBuilderElemIsSetStructChangeBtnOnLang, 
+.vFrontKontaktFormBuilderElemIsSetStructDelBtn, 
+.vFrontKontaktFormBuilderContainerIsSetStructDelBtn {
+  position:absolute;
+  top:8px;
+  right:37px;
+  width:20px;
+  height:20px;
+  background-image:url("../img/change_b.png");
+  background-repeat:no-repeat;
+  background-position:2px 2px;
+  cursor:pointer;
+}
+.vFrontKontaktFormBuilderElemIsSetStructChangeBtnOnLang {
+  right:7px;
+}
+.vFrontKontaktFormBuilderElemIsSetStructDelBtn {
+  background-image:url("../img/trash_b.png");
+  right:7px;
+}
+.vFrontKontaktFormBuilderContainerIsSetStructDelBtn {
+  background-image:url("../img/trash_b.png");
+  right:7px;
+  top:-20px;
+  background-color:#FFF;
+}
+
+
+.vFrontKontaktFormInnerElemsDragHolderMM {
+  position:absolute;
+  top:60px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  overflow:auto;
+}
+
+.vFrontKontaktFormInnerElemsBtnDropsHideMM, 
+.vFrontKontaktFormInnerElemsBtnEinstellungenMM, 
+.vFrontKontaktFormInnerElemsBtnEinstellungenOnLangMM {
+  position:absolute;
+  top:12px;
+  left:20px;
+  background-color:#1570a6;
+  color:#FFF;
+  padding:8px 0px;
+  text-align:center;
+  width:200px;
+  cursor:pointer;
+}
+.vFrontKontaktFormInnerElemsBtnEinstellungenMM {
+  left:240px;
+  width:120px;
+}
+.vFrontKontaktFormInnerElemsBtnEinstellungenOnLangMM {
+  width:120px;
+}
+
+.vFrontKontaktFormInnerElemsBtnLangChangeMM {
+  position:absolute;
+  top:12px;
+  right:38px;
+}
+.vFrontKontaktFormInnerElemsBtnLangChangeMM .dd {
+  border: 1px solid #999999;
+  font-size: 12px;
+  margin-left: 10px;
+  width: 220px !important;
+}
+.vFrontKontaktFormInnerElemsBtnLangChangeMM .dd .ddChild {
+  border:1px solid #999;
+  left:-1px;
+}
+
+.vFrontKontaktFormImgClassOnChange {
+  background-image:url("../img/mail.png");
+  background-position: 6px 7px;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+.vFrontOwnElemSettingsWindowInHeader {
+  position:absolute;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  height:44px;
+}
+.vFrontOwnElemSettingsWindowInHeader .vFrontOwnElemSettingsWindowInHeaderBtnSave {
+  /*float:right;*/
+  background-color: #006400;
+  border: 1px solid transparent;
+  color: #fff;
+  cursor: pointer;
+  font-family: Verdana;
+  font-size: 14px;
+  padding: 12px;
+  /*width: 170px;*/
+  text-align:center;
+}
+
+
+.vFrontOwnElemSettingsWindowInInhalt {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:44px;
+  overflow-y:auto;
+}
+
+.vFrontOwnElemSettingsWindowInInhaltSystemCalendar, .vFrontOwnElemSettingsWindowInInhaltSystemTime {
+  width:120px !important;
+}
+.vFrontOwnElemSettingsWindowInInhaltSystemTime {
+  margin-left:10px;
+}
+.vFrontOwnElemSettingsWindowInInhaltSystem .ui-datepicker-trigger {
+  vertical-align:middle;
+}
+
+.vFrontOwnElemSettingsWindowInInhaltSystem .dd {
+  width:138px !important;
+}
+
+.vFrontOwnElemSettingsWindowInInhalt label {
+  width:140px;
+}
+
+.vFrontOwnElemSettingsWindowInInhalt .vFrontSmallSeFrmHolder .vFrontSmallSeFrmHolderAbstand {
+  height:12px;
+}
+
+.vFrontOwnElemSettingsWindowInInhaltEigen label {
+  width:375px;
+}
+
+
+
+
+
+
+
+/*********** Filtersystem Modul ***********/
+.mmModulFiltersysAdminWindowHolder {
+  
+}
+
+
+.mmModulFiltersysAdminWindowHolder .mmModulFiltersysAdminWindowHead {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+}
+.mmModulFiltersysAdminWindowHolder .mmModulFiltersysAdminWindowHead .mmModulFiltersysAdminWindowHeadAuswahlFiltKatBtn {
+  background-color: #1570a6;
+  color: #ffffff;
+  cursor: pointer;
+  margin:15px 0px 0px 20px;
+  padding: 8px 0;
+  text-align: center;
+  width: 130px;
+  float:left;
+}
+.mmModulFiltersysAdminWindowHolder .mmModulFiltersysAdminWindowHead .mmModulFiltersysAdminWindowHeadNewFiltKatBtn {
+  background-color: #1570a6;
+  color: #ffffff;
+  cursor: pointer;
+  margin:15px 20px 0px 0px;
+  padding: 8px 0;
+  text-align: center;
+  width: 180px;
+  float:right;
+}
+
+
+.mmModulFiltersysAdminWindowHolder .mmModulFiltersysAdminWindowKatAuswahlHolder {
+  position:absolute;
+  top:68px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  overflow-y:auto;
+}
+
+
+
+.vFrontHpSeAuflistungLiFiltersysKat {
+  background-image:url('../img/filterList.png') !important;
+}
+
+.vFrontHpSeAuflistungLiTimeKat {
+  background-image:url('../img/time_b.png') !important;
+}
+
+
+
+/**
+ * tree kategory gallery
+ */
+
+.tree, .tree ul {
+    margin:0;
+    padding:0;
+    list-style:none
+}
+.tree ul {
+        margin-left: 0px;
+    position: relative;
+    width: 250px;
+	overflow:hidden;
+}
+
+/*.tree ul:before {
+    content:"";
+    display:block;
+    width:0;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    border-left:1px solid
+}*/
+.tree li {
+    margin:0;
+    padding:0 10px;
+    line-height:2em;
+    color:#369;
+    font-weight:700;
+    position:relative
+}
+/*.tree ul li:before {
+    content:"";
+    display:block;
+    width:10px;
+    height:0;
+    border-top:1px solid;
+    margin-top:-1px;
+    position:absolute;
+    top:1em;
+    left:0
+}
+.tree ul li:last-child:before{
+    height:auto;
+    top:1em;
+    bottom:0
+}*/
+.indicator {
+    margin-right:5px;
+}
+.tree li a {
+    text-decoration: none;
+    color:#369;
+}
+.tree li button, .tree li button:active, .tree li button:focus {
+    text-decoration: none;
+    color:#369;
+    border:none;
+    background:transparent;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    outline: 0;
+}
+
+.tree li ul{
+    width: 240px;
+}
+.tree li ul li{
+    padding:0 0 0 10px;
+}
+
+.tree li ul ul{
+    width: 230px;
+}
+.tree li ul li ul li{
+    padding:0 0 0 10px;
+}
+
+.tree li ul ul ul{
+    width: 220px;
+}
+.tree li ul li ul li ul li{
+    padding:0 0 0 10px;
+}
+
+.tree li ul ul ul ul{
+    width: 210px;
+}
+.tree li ul li ul li ul li ul li{
+    padding:0 0 0 10px;
+}
+
+.tree li ul ul ul ul ul{
+    width: 200px;
+}
+.tree li ul li ul li ul li ul li ul li{
+    padding:0 0 0 10px;
+}
+
+.tree li ul ul ul ul ul ul{
+    width: 190px;
+}
+.tree li ul li ul li ul li ul li ul li ul li{
+    padding:0 0 0 10px;
+}
+
+.tree li ul ul ul ul ul ul ul{
+    width: 180px;
+}
+.tree li ul li ul li ul li ul li ul li ul li ul li{
+    padding:0 0 0 10px;
+}
+
+
+.sort-image-container {
+background-color: #CCCCCC;
+	padding: 4px 10px 4px 10px ;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.sort-image-container h3{
+    font-size: 15px;
+    color: #FFFFFF;
+    /* font-weight: bold; */
+    margin-top: 6px;
+    margin-bottom: 7px;
+}
+
+.sort-image-container  input,
+.sort-image-container  select{
+color:#A9A8A8;
+border: 1px solid #CCCCCC;
+margin-top: 4px;
+}
+
+.sort-image-container input{    padding: 6px;}
+.sort-image-container  select{    padding: 5px 6px 5px 6px;    width: 182px;}
+
+.sort-image-container  input:hover,
+.sort-image-container  select:hover{
+border: 1px solid #999999;
+color:#CCCCCC;
+}
+.sort-image-container p {margin:0;}
+.sort-image-container input[type=submit] {
+  background-color:#1570A6;
+  padding:10px 20px;
+  color:#fff;
+  border:0;
+  font-size:14px;
+  border-radius:2px;
+  cursor:pointer;
+  display:inline-block;
+  margin-top:5px;
+  margin-bottom: 10px;
+  line-height:1;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+}
+.sort-image-container  input[type=submit]:hover {
+  background-color:#0986a3;
+}
+
+.sort-image-container  label {
+width: 37%;}
+
+.sort-image-container  .resize-options label {
+width: 50%;}
+
+.sort-image-container .other-options p:last-child input[type=text] {
+width: 161px;}
+
+.image-cropper-container {margin-top: 10px;}
+
+.image-cropper-container .img-container {
+width: 100%;
+}
+.image-cropper-container .img-container > img{
+  max-width: 100%;
+}
+
+.img-crop-right {
+width: 77px;
+    height: 50px;
+overflow: hidden;
+margin: 5px;}
+	
+.img-crop-right.active {
+border: 2px solid #DF0024;
+margin: 4px;}

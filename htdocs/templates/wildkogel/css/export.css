@@ -1,0 +1,360 @@
+
+#customheader * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#customheader {height: 517px;}
+
+#customheader .top {
+    width: 100%;
+	    min-width: 1000px;
+    height: 96px;
+    line-height: 95px;
+    position: fixed;
+    top: 0;
+    background-color: #fdfdfd;
+    z-index: 999999;
+	border-bottom: 1px solid #D1D4DC;
+}
+
+#customheader .topInner {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+    position: relative;
+}
+
+#customheader .topLeft {
+    float: left;
+}
+
+#customheader .logo {
+    position: relative;
+}
+
+#customheader #logoBand {
+    position: absolute;
+    left: 46px;
+    top: 0;
+    z-index: -1;
+}
+
+#customheader #logoImg {
+    z-index: 2;
+    position: relative;
+    top: 73px;
+}
+
+#customheader .menuToggle {
+    float: left;
+    font-size: 16.67px;
+    font-weight: 300;
+    margin-left: 15px;
+    cursor: pointer;
+    padding-left: 45px;
+    height: 95px;
+    min-width: 45px;
+    background: url(http://wildkogel-arena.at/templates/wildkogel/img/menu-selector.png) no-repeat center left;
+}
+
+#customheader #navbar {
+    position: absolute;
+    top: 0;
+    display: none;
+    left: 230px;
+    padding: 0 40px 0 0;
+    background: #fdfdfd;
+    width: calc(100% - 351px);
+}
+
+#customheader #navbar ul.v_siteMenu {
+    float: right;
+}
+
+#customheader #navbar ul.v_siteMenu > li.menuPoint {
+    float: left;
+}
+
+#customheader #navbar > ul > .menuPoint:first-child {
+    margin-left: 0;
+}
+
+#customheader .nav>li {
+    position: relative;
+    display: block;
+}
+
+#customheader #navbar .menuPoint > a {
+    padding: 0 13px;
+    line-height: 95px;
+    color: #2d2d2c;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#customheader .topMenuClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 95px;
+    background: url(http://wildkogel-arena.at/templates/wildkogel/img/x-black.png) no-repeat center center;
+    cursor: pointer;
+}
+
+#customheader .scrollDown {
+    height: 55px;
+    background: url(http://wildkogel-arena.at/templates/wildkogel/img/pfeil_berg.png) no-repeat center top;
+}
+
+@media (min-width: 768px) {
+#customheader .navbar-nav {
+    float: left;
+    margin: 0;
+}
+
+#customheader .navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+}
+
+#customheader .nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+#customheader #navbar ul.v_siteMenu {
+    float: right;
+}
+
+#customheader #navbar .menuPoint .v_siteUnterMenu {
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 15px 20px 15px 14px;
+    color: #2e2d2c;
+    background: #b1b1b1;
+}
+
+#customheader #navbar .menuPoint > a {
+    padding: 0 13px;
+    line-height: 95px;
+    color: #2d2d2c;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#customheader #navbar .menuPoint .v_siteUnterMenu a {
+    color: #2e2d2c;
+    font-size: 18px;
+    line-height: 22px;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    display: block;
+    padding: 0 10px;
+}
+
+#customheader .topMenuClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 95px;
+    background: url(http://wildkogel-arena.at/templates/wildkogel/img/x-black.png) no-repeat center center;
+    cursor: pointer;
+}
+
+#customheader .dummy {
+    height: 95px;
+}
+
+#customheader .standardHeader {
+    background-position: center center;
+    background-size: cover;
+    clear: both;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Annie Use Your Telescope';
+	min-width: 1000px;
+}
+
+#customheader .standardHeaderInner {
+    position: relative;
+    height: 367px;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+#customheader .standardHeaderInner > img {
+    margin-top: 70px;
+}
+
+#customheader .standardHeader h1 {
+    color: #2e2d2c;
+    font-size: 65px;
+    font-weight: 400;
+    margin: 10px;
+	font-family:'Annie Use Your Telescope', sans-serif;
+}
+
+#customheader .scrollDown {
+    height: 55px;
+    background: url(http://wildkogel-arena.at/templates/wildkogel/img/pfeil_berg.png) no-repeat center top;
+		    min-width: 1000px;
+}
+
+#customheader .menuToggle:hover {
+    color: #e6001b;
+    background: url(http://wildkogel-arena.at/templates/wildkogel/img/menu-selector-rot.png) no-repeat center left;
+}
+
+#customheader #navbar .menuPoint > a:hover, #customheader #navbar .menuPoint > a:active {
+    background: url(http://wildkogel-arena.at/templates/wildkogel/img/berg-menu-bg.png) no-repeat center center;
+}
+
+
+#customheader a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+
+
+#customheader .nav>li>a:focus, #customheader .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #eee;
+}
+
+#customheader .nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+
+
+
+
+
+
+
+/*** ESSENTIAL STYLES ***/
+#customheader .sf-menu, .sf-menu * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#customheader .sf-menu li {
+	position: relative;
+}
+#customheader .sf-menu ul {
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: 0;
+	z-index: 99;
+}
+#customheader .sf-menu > li {
+	float: left;
+}
+#customheader .sf-menu li:hover > ul,
+#customheader .sf-menu li.sfHover > ul {
+	display: block;
+}
+
+#customheader .sf-menu a {
+	display: block;
+	position: relative;
+}
+#customheader .sf-menu ul ul {
+	top: 0;
+	left: 100%;
+}
+
+
+/*** DEMO SKIN ***/
+#customheader .sf-menu {
+	float: left;
+	margin-bottom: 1em;
+}
+#customheader .sf-menu ul {
+	box-shadow: 2px 2px 6px rgba(0,0,0,.2);
+	min-width: 12em; /* allow long menu items to determine submenu width */
+	*width: 12em; /* no auto sub width for IE7, see white-space comment below */
+}
+#customheader .sf-menu a {
+	border-left: 1px solid #fff;
+	border-top: 1px solid #dFeEFF; /* fallback colour must use full shorthand */
+	border-top: 1px solid rgba(255,255,255,.5);
+	padding: .75em 1em;
+	text-decoration: none;
+	zoom: 1; /* IE7 */
+}
+#customheader .sf-menu a {
+	color: #13a;
+}
+#customheader .sf-menu li {
+	background: #BDD2FF;
+	white-space: nowrap; /* no need for Supersubs plugin */
+	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
+	-webkit-transition: background .2s;
+	transition: background .2s;
+}
+#customheader .sf-menu ul li {
+	background: #AABDE6;
+}
+#customheader .sf-menu ul ul li {
+	background: #9AAEDB;
+}
+#customheader .sf-menu li:hover,
+#customheader .sf-menu li.sfHover {
+	background: #CFDEFF;
+	/* only transition out, not in */
+	-webkit-transition: none;
+	transition: none;
+}
+
+/*** arrows (for all except IE7) **/
+#customheader .sf-arrows .sf-with-ul {
+	padding-right: 2.5em;
+	*padding-right: 1em; /* no CSS arrows for IE7 (lack pseudo-elements) */
+}
+/* styling for both css and generated arrows */
+#customheader .sf-arrows .sf-with-ul:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 1em;
+	margin-top: -3px;
+	height: 0;
+	width: 0;
+	/* order of following 3 rules important for fallbacks to work */
+	border: 5px solid transparent;
+	border-top-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
+	border-top-color: rgba(255,255,255,.5);
+}
+#customheader .sf-arrows > li > .sf-with-ul:focus:after,
+#customheader .sf-arrows > li:hover > .sf-with-ul:after,
+#customheader .sf-arrows > .sfHover > .sf-with-ul:after {
+	border-top-color: white; /* IE8 fallback colour */
+}
+/* styling for right-facing arrows */
+#customheader .sf-arrows ul .sf-with-ul:after {
+	margin-top: -5px;
+	margin-right: -3px;
+	border-color: transparent;
+	border-left-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
+	border-left-color: rgba(255,255,255,.5);
+}
+#customheader .sf-arrows ul li > .sf-with-ul:focus:after,
+#customheader .sf-arrows ul li:hover > .sf-with-ul:after,
+#customheader .sf-arrows ul .sfHover > .sf-with-ul:after {
+	border-left-color: white;
+}
+
